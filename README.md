@@ -2,6 +2,15 @@
 
 **지휘 및 조정(Command and Coordination)** — 현장지휘, 대응 지원, 정책 판단과 공보체계를 함께 이해하기 위한 한국어 학습 정리입니다.
 
+## 학습 웹페이지
+
+이 저장소 루트의 `index.html`이 한 페이지 학습 웹사이트입니다. 챕터 목차, 모바일용 표 구성, 원문 그림 확대, 복습 정답 열기를 제공합니다.
+
+Vercel에서 이 저장소를 Import하고 정적 사이트로 배포할 수 있습니다. 배포할 때 Framework Preset은 Other, Root Directory는 저장소 루트로 둡니다. 별도의 설치·빌드 명령 없이 HTML·CSS·JavaScript와 이미지 파일로 동작합니다. 현재 Vercel 배포 주소는 아직 없습니다.
+
+- 웹페이지 파일: [index.html](index.html), [styles.css](styles.css), [app.js](app.js)
+- 제작 기준: [BUILD_PROMPT.md](BUILD_PROMPT.md)
+
 ## 읽는 순서
 
 1. [제3장 학습 노트](chapter3.md): 관리특성 14개, 주요 조직·직책·시설, 원문 그림 3~10 전체 8개
