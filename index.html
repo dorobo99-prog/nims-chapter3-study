@@ -10,7 +10,7 @@
 <link href="styles.css" rel="stylesheet"/>
 <script defer="" src="app.js">
 </script>
-<meta content="1.2.0" name="version"/></head>
+<meta content="1.2.1" name="version"/></head>
 <body id="top">
 <a class="skip-link" href="#overview">본문으로 이동</a>
 <div aria-hidden="true" class="reading-progress">
@@ -23,7 +23,7 @@
 <strong>NIMS</strong>
 <span>제3장 정리노트</span>
 </a>
-<a class="version-badge" href="https://github.com/dorobo99-prog/nims-chapter3-study/blob/main/CHANGELOG.md" aria-label="현재 버전 v1.2.0, 변경 이력 보기">v1.2.0</a>
+<a aria-label="현재 버전 v1.2.1, 변경 이력 보기" class="version-badge" href="https://github.com/dorobo99-prog/nims-chapter3-study/blob/main/CHANGELOG.md">v1.2.1</a>
 </div>
 <a class="repository-link" href="https://github.com/dorobo99-prog/nims-chapter3-study">자료 저장소 ↗</a>
 </header>
@@ -70,7 +70,7 @@
 </li>
 <li>
 <a data-chapter="review" href="#review">
-<span>10</span>복습과 근거</a>
+<span>10</span>복습과 출처</a>
 </li>
 </ol>
 <p class="toc-note">영문 인쇄 pp.19–49<br/>원문 그림 3–10 수록</p>
@@ -128,7 +128,7 @@
 </li>
 <li>
 <a data-chapter="review" href="#review">
-<span>10</span>복습과 근거</a>
+<span>10</span>복습과 출처</a>
 </li>
 </ol>
 </nav>
@@ -152,39 +152,36 @@
 <div class="chapter-body">
 <p><strong>번역 기준:</strong> 사고(Incident)는 인명·재산 보호를 위한 대응이 필요한 자연적·인위적 발생이다. NIMS에서는 재난·비상상황·계획행사까지 포함하는 포괄적 개념으로 사용한다. 이 노트는 Incident를 사고로 통일한다. <a href="#terms">번역 기준과 FEMA 보충 용어 보기 →</a></p>
 <p>지휘 및 조정(Command and Coordination)은 현장 전술, 대응 지원, 정책적 판단, 대국민 소통을 연결하는 체계다. 공통 용어·조직·절차로 여러 기관의 활동을 맞추면서 각 기관의 권한·책임을 유지한다. 사고지휘체계(Incident Command System, ICS), 비상운영센터(Emergency Operations Center, EOC), 다기관조정그룹(Multiagency Coordination Group, MAC Group), 합동정보시스템(Joint Information System, JIS)이 이 기능의 실행과 연계에 참여한다. (인쇄 p.19)</p>
-<blockquote>
-<p>[!important] 근거와 범위
-사용자 요청 “자료는 직접 접근해서 읽어봐”에 따라 영문 PDF를 직접 대조했다. 발췌본은 PDF 31쪽이며 인쇄 pp.19–49에 해당한다. 아래 페이지는 모두 영문 인쇄 페이지다. 번역본은 제공되지 않았으므로 번역 오류·번역본 페이지 대응은 검증하지 않았다. 미국 체계에 대한 교재 설명이며 한국 제도와의 동일성을 뜻하지 않는다.</p>
-</blockquote>
-<p>아래는 학습을 위한 기능 중심 정리다. 네 책임 영역과 네 구성요소가 배타적으로 일대일 대응한다는 뜻은 아니다. 원문은 MACS가 구성요소 사이에서 이 책임 영역을 조정한다고 설명한다. (p.19)</p>
+
+<p>네 책임 영역과 네 구성요소가 배타적으로 일대일 대응한다는 뜻은 아니다. 원문은 MACS가 구성요소 사이에서 이 책임 영역을 조정한다고 설명한다. (p.19)</p>
 <table class="study-table">
 <thead>
 <tr>
 <th>구성요소</th>
 <th>주된 역할</th>
-<th>설명의 경계</th>
+<th>유의사항</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td data-label="구성요소">ICS</td>
 <td data-label="주된 역할">현장 사고관리의 지휘·통제·조정</td>
-<td data-label="설명의 경계">ICS에도 조정 기능이 있다. ‘지휘는 ICS, 조정은 EOC’라는 완전한 이분법은 부정확하다. pp.24–25</td>
+<td data-label="유의사항">ICS에도 조정 기능이 있다. ‘지휘는 ICS, 조정은 EOC’라는 완전한 이분법은 부정확하다. pp.24–25</td>
 </tr>
 <tr>
 <td data-label="구성요소">EOC</td>
 <td data-label="주된 역할">정보 수집·분석·공유, 자원 요청·배분·추적, 계획 조정</td>
-<td data-label="설명의 경계">일부 운영을 맡고, 현장지휘가 수립되지 않은 경우 전술작전을 지휘할 수 있다. p.35</td>
+<td data-label="유의사항">일부 운영을 맡고, 현장지휘가 수립되지 않은 경우 전술작전을 지휘할 수 있다. p.35</td>
 </tr>
 <tr>
 <td data-label="구성요소">MAC Group</td>
 <td data-label="주된 역할">정책 수준의 공동 판단, 자원 우선순위·배분</td>
-<td data-label="설명의 경계">현장지휘 기능을 수행하거나 작전·조정·출동조직의 기본 기능을 대체하지 않는다. p.40</td>
+<td data-label="유의사항">현장지휘 기능을 수행하거나 작전·조정·출동조직의 기본 기능을 대체하지 않는다. p.40</td>
 </tr>
 <tr>
 <td data-label="구성요소">JIS</td>
 <td data-label="주된 역할">기관 간 메시지와 공보활동의 통합·조정</td>
-<td data-label="설명의 경계">현장/전술·센터/조정·정책/전략의 세 수준을 가로지른다. p.42</td>
+<td data-label="유의사항">현장/전술·센터/조정·정책/전략의 세 수준을 가로지른다. p.42</td>
 </tr>
 </tbody>
 </table>
@@ -205,7 +202,7 @@
 <p>규모가 달라도 함께 쓰는 관리 원칙</p>
 </header>
 <div class="chapter-body">
-<p>원문 p.20의 목록을 읽기 순서에 맞춰 정리했다. 세부 설명은 pp.20–23에 있다.</p>
+
 <table class="study-table">
 <thead>
 <tr>
@@ -315,7 +312,7 @@
 </header>
 <div class="chapter-body">
 <div id="command-comparison"><h3>IC·UC·AC는 무엇이 다른가?</h3>
-<p>IC·UC·AC는 사고 규모에 따라 직급이 올라가는 세 단계가 아니다. <strong>지휘 책임을 맡는 개인</strong>, <strong>권한 있는 기관이 공동으로 지휘하는 방식</strong>, <strong>여러 ICS 조직을 감독하는 조직</strong>을 구별한다. 아래 표는 NIMS 제3장 인쇄 pp.24–26·33–34를 대조한 학습용 재구성이다. 한국어는 이 정리노트의 편집 기준이다.</p>
+<p>IC·UC·AC는 사고 규모에 따라 직급이 올라가는 세 단계가 아니다. <strong>지휘 책임을 맡는 개인</strong>, <strong>권한 있는 기관이 공동으로 지휘하는 방식</strong>, <strong>여러 ICS 조직을 감독하는 조직</strong>을 구별한다. </p>
 <table class="study-table">
 <thead>
 <tr>
@@ -386,7 +383,7 @@
 <li><a href="#figure-4">그림 4: UC의 ICS 조직</a>은 공동 지휘부 아래 하나의 통합 기능조직을 보여준다.</li>
 <li><a href="#figure-6">그림 6: AC와 복수 사고지휘부</a>은 복수 지휘조직의 감독과 EOC 지원 조정의 관계를 보여준다.</li>
 </ul>
-<p><strong>개념 적용 예시(가상):</strong> 지정된 IC가 공장 화재를 관리하는 경우, 권한·기능상 책임을 가진 기관들이 화학물질 누출의 목표를 UC에서 함께 정하는 경우, 여러 독립 ICS가 운영되는 산불에서 공통 항공자원 수요를 AC가 조정하는 경우를 생각할 수 있다. 이는 실제 사건이나 FEMA 원문 사례를 보고한 것이 아니다. 실제 지휘방식은 해당 기관의 권한과 사고 조건에 따라 판단한다.</p></div>
+<p><strong>개념 적용 예시(가상):</strong> 지정된 IC가 공장 화재를 관리하는 경우, 권한·기능상 책임을 가진 기관들이 화학물질 누출의 목표를 UC에서 함께 정하는 경우, 여러 독립 ICS가 운영되는 산불에서 공통 항공자원 수요를 AC가 조정하는 경우를 생각할 수 있다. 실제 지휘방식은 해당 기관의 권한과 사고 조건에 따라 판단한다.</p></div>
 <h3>다섯 주요 기능과 참모</h3>
 <p>ICS의 다섯 주요 기능은 지휘(Command), 작전(Operations), 계획(Planning), 지원(Logistics), 재무·행정(Finance/Administration)이다. 필요한 기능만 담당자를 배치하며, 부서장이 배치되기 전에는 지휘관 또는 통합지휘부가 해당 기능을 책임진다. (pp.24, 28)</p>
 <ul>
@@ -502,7 +499,7 @@
 <strong>Figure 6의 관계:</strong> Area Command는 복수 사고관리를 감독하고, EOC는 지원을 조정하며, MAC Group은 Area Command와 EOC에 정책 지침·전략 방향을 제공한다. (p.34)</li>
 </ul>
 <div id="multiple-comparison"><h3>사고복합체와 AC — ICS 조직 수를 비교한다</h3>
-<p>이 노트는 Incident Complex를 기존 표현인 <strong>사고복합체</strong>로 통일한다. ‘복합사고 관리체계’는 같은 개념의 기능을 풀어 쓴 번역 후보이며 공식 표준으로 확정한 명칭이 아니다.</p>
+
 <table class="study-table">
 <thead>
 <tr>
@@ -550,24 +547,24 @@
 <tr>
 <th>구성요소</th>
 <th>주된 역할</th>
-<th>설명의 경계</th>
+<th>유의사항</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td data-label="구성요소">AC</td>
 <td data-label="주된 역할">복수 사고지휘조직의 관리 감독, 목표·전략 및 자원 배분 조정</td>
-<td data-label="설명의 경계">개별 ICS 조직을 하나로 합치지 않음</td>
+<td data-label="유의사항">개별 ICS 조직을 하나로 합치지 않음</td>
 </tr>
 <tr>
 <td data-label="구성요소">EOC</td>
 <td data-label="주된 역할">정보·자원·계획 등 대응 지원의 조정</td>
-<td data-label="설명의 경계">AC와 같은 현장 상위지휘부로 정의하지 않음. 현장지휘가 수립되지 않았을 때 전술작전을 지휘할 수 있는 예외는 p.35에 별도 설명</td>
+<td data-label="유의사항">AC와 같은 현장 상위지휘부로 정의하지 않음. 현장지휘가 수립되지 않았을 때 전술작전을 지휘할 수 있는 예외는 p.35에 별도 설명</td>
 </tr>
 <tr>
 <td data-label="구성요소">MAC Group</td>
 <td data-label="주된 역할">AC·EOC에 정책 지침·전략 방향 제공, 정책 수준의 자원 우선순위·배분</td>
-<td data-label="설명의 경계">현장지휘나 작전·조정·출동조직의 기본 기능을 대체하지 않음. pp.40–41</td>
+<td data-label="유의사항">현장지휘나 작전·조정·출동조직의 기본 기능을 대체하지 않음. pp.40–41</td>
 </tr>
 </tbody>
 </table>
@@ -578,7 +575,7 @@
 <li>관할권·권한·기능상 책임을 가진 기관들이 공동으로 목표를 정해야 하는가? UC의 구성과 통합 운영을 검토한다.</li>
 <li>하나의 ICS로 여러 사고를 충분히 관리할 수 있는가, 여러 ICS 사이에 자원 경쟁과 감독 필요가 있는가? 사고복합체와 AC를 구별한다.</li>
 </ol>
-<p>이 질문은 학습용 판단 순서이며 조직을 자동 선택하는 법적 규칙이나 재난 단계표가 아니다.</p></div>
+</div>
 <figure class="source-figure" id="figure-6">
 <a aria-label="그림 6: 광역지휘부와 복수 사고지휘부, 크게 보기" class="figure-open" href="images/figure-06.png">
 <img alt="원문 Figure 6: 광역지휘부와 복수 사고지휘부" height="563" loading="lazy" src="images/figure-06.png" width="1586"/>
@@ -788,7 +785,7 @@
 <h2 id="heading-terms">번역 기준과 용어 구분</h2><p>사고의 범위와 함께 일하는 방식</p></header>
 <div class="chapter-body"><h3>Incident는 무엇을 포함하는가?</h3>
 <p><strong>사고(Incident)</strong>는 인명 또는 재산 보호를 위한 대응이 필요한 자연적·인위적 발생을 뜻한다. NIMS에서는 <strong>재난·비상상황·계획행사까지 포함하는 포괄적 개념</strong>으로 사용한다. 계획행사는 대규모 행사에 한정하지 않는다. (NIMS 용어집 인쇄 p.64 / 전체 PDF p.74)</p>
-<p>이 정리노트는 Incident를 기본적으로 <strong>사고</strong>로 통일한다. 한국어의 일상적인 사고보다 넓은 의미이므로 최초 등장에 위 범위를 명시한다. 아래 표현은 이번 학습자료의 편집 기준이며 전체 항목이 국내 공식 표준으로 확인되었다는 뜻은 아니다. 현장지휘소(Incident Command Post, ICP)는 유지한다.</p>
+
 <table class="study-table">
 <thead>
 <tr>
@@ -867,32 +864,32 @@
 </tr>
 </tbody>
 </table>
-<p>이 비교는 학습용 해설이며 NIMS 용어집이 Accident를 별도로 정의한 것으로 제시하지 않는다. 두 용어를 직접 비교할 때는 영어를 병기한다.</p>
+
 <h3>협조·소통·조정·협업 — VOAD의 4Cs</h3>
 <p><strong>FEMA IS-288.a 보충 교육자료</strong>의 「State and Local VOAD」는 자원봉사기관 협의체(VOAD)가 기관별 자율성을 유지하며 함께 일하기 위한 네 원칙을 설명한다. NIMS 제3장의 정의문과 출처를 구분해서 읽는다. (IS-288.a 인쇄 IG-19 / PDF 21쪽)</p>
 <table class="study-table">
 <thead>
 <tr>
 <th>용어</th>
-<th>교재 설명의 학습용 번역</th>
+<th>핵심 의미</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td data-label="용어">협조(Cooperation)</td>
-<td data-label="교재 설명의 학습용 번역">구성기관 간 상호 신뢰와 팀워크를 형성하고 정보를 공유할 장을 마련한다.</td>
+<td data-label="핵심 의미">구성기관 간 상호 신뢰와 팀워크를 형성하고 정보를 공유할 장을 마련한다.</td>
 </tr>
 <tr>
 <td data-label="용어">소통(Communication)</td>
-<td data-label="교재 설명의 학습용 번역">이용 가능한 서비스 정보를 효율적으로 전달하는 정보 중개 창구 역할을 한다.</td>
+<td data-label="핵심 의미">이용 가능한 서비스 정보를 효율적으로 전달하는 정보 중개 창구 역할을 한다.</td>
 </tr>
 <tr>
 <td data-label="용어">조정(Coordination)</td>
-<td data-label="교재 설명의 학습용 번역">서비스 제공의 효율성을 최대화하고 노력의 중복을 방지한다.</td>
+<td data-label="핵심 의미">서비스 제공의 효율성을 최대화하고 노력의 중복을 방지한다.</td>
 </tr>
 <tr>
 <td data-label="용어">협업(Collaboration)</td>
-<td data-label="교재 설명의 학습용 번역">미충족 수요에 대응하도록 구호활동에서 파트너 관계를 장려하고 자산·자원관리 역량을 보강한다.</td>
+<td data-label="핵심 의미">미충족 수요에 대응하도록 구호활동에서 파트너 관계를 장려하고 자산·자원관리 역량을 보강한다.</td>
 </tr>
 </tbody>
 </table>
@@ -905,58 +902,53 @@
 <thead>
 <tr>
 <th>용어</th>
-<th>정의문의 학습용 번역</th>
+<th>정의</th>
 <th>구별할 초점</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td data-label="용어">조정(Coordination)</td>
-<td data-label="정의문의 학습용 번역">서로 다른 조직이나 집단이 각자의 임무를 서로 조화롭게 수행하는 것.</td>
+<td data-label="정의">서로 다른 조직이나 집단이 각자의 임무를 서로 조화롭게 수행하는 것.</td>
 <td data-label="구별할 초점">기관별 임무의 정렬</td>
 </tr>
 <tr>
 <td data-label="용어">협업(Collaboration)</td>
-<td data-label="정의문의 학습용 번역">공유 목표와 목적을 확인하고 달성하기 위해 함께 창조하거나 함께 일하는 과정.</td>
+<td data-label="정의">공유 목표와 목적을 확인하고 달성하기 위해 함께 창조하거나 함께 일하는 과정.</td>
 <td data-label="구별할 초점">공유 목표의 확인·달성</td>
 </tr>
 </tbody>
 </table>
-<p>같은 자료의 「Importance of Collaboration」은 파트너가 산출물을 만들어 내는 활동으로 <strong>노력 결합, 전문성·정보·자원 교환, 공동 의사결정, 결과에 대한 소유권 공유</strong>를 설명한다. 산출물은 정보 공유전략·정책 권고·계획문서·새로운 절차일 수 있다. 이 네 활동은 교재의 설명이며 별도의 점수척도나 필수 판정표로 만든 것이 아니다. 제공된 Lesson 2는 Cooperation을 두 용어와 병렬로 정의하지 않는다.</p>
+<p>같은 자료의 「Importance of Collaboration」은 파트너가 산출물을 만들어 내는 활동으로 <strong>노력 결합, 전문성·정보·자원 교환, 공동 의사결정, 결과에 대한 소유권 공유</strong>를 설명한다. 산출물은 정보 공유전략·정책 권고·계획문서·새로운 절차일 수 있다. </p>
 <h4>자료마다 조건과 적용 맥락이 다르다</h4>
 <p>IS-288.a 「Summary of Unit 3」는 협업을 둘 이상의 주체가 공통 임무를 위해 함께 일하겠다는 <strong>공식적이고 지속적인 약속(formal and sustained commitment)</strong>을 하는 과정으로 설명한다. 공동 의사결정 참여, 정보·자원·과업 공유, 상대 임무와 다양성 존중, 공동체 의식을 성공 조건으로 제시한다. (인쇄 IG-23 / PDF 25쪽)</p>
 <p>IS-913.a의 「Formal vs. Informal Partnerships」와 「Duration of Partnerships」는 공식·비공식 구조와 특정 기간·목표에 한정된 파트너십을 모두 다룬다. 협업의 약속에 대한 요약과 파트너십의 조직 형태·기간은 설명 대상이 다르므로 직접 모순으로 단정하지 않는다. 동시에 ‘공식적·지속적’이라는 조건을 FEMA 전체의 단일 필수 요건으로 일반화하지도 않는다.</p>
 <p>IS-913.a의 파트너십 구축 절차는 <strong>적절한 파트너 찾기 → 공유 목적·목표 설정 → 절차 합의 → 실행·지속</strong>이다. 이것은 Cooperation → Coordination → Collaboration이라는 보편적 상승 단계와 구분한다.</p>
 <h3>NIMS에서의 조정과 기관 역할</h3>
 <p>NIMS 용어집의 <strong>조정하다(Coordinate)</strong>는 특정 사고관리 책임을 수행하기 위해 필요한 정보를 관련 당사자 사이에 체계적으로 교환하는 행위다. 표제어는 명사 Coordination이 아니라 동사 Coordinate다. (인쇄 p.62 / 전체 PDF p.72)</p>
-<p>이 용어집 정의만으로 제3장의 계획·자원·지원·정책 조정 기능 전체를 정보 교환에 한정하지 않는다. Cooperation·Collaboration은 NIMS 용어집의 독립 정의 항목으로 확인하지 못했으며 본문의 협조·협업 용례와 구분한다.</p>
+<p>이 용어집 정의만으로 제3장의 계획·자원·지원·정책 조정 기능 전체를 정보 교환에 한정하지 않는다. </p>
 <table class="study-table">
 <thead>
 <tr>
 <th>기관 역할</th>
-<th>NIMS 용어집 설명의 학습용 번역</th>
+<th>역할</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td data-label="기관 역할">지원기관(Assisting Agency)</td>
-<td data-label="NIMS 용어집 설명의 학습용 번역">사고에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71</td>
+<td data-label="역할">사고에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71</td>
 </tr>
 <tr>
 <td data-label="기관 역할">협조기관(Cooperating Agency)</td>
-<td data-label="NIMS 용어집 설명의 학습용 번역">사고관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72</td>
+<td data-label="역할">사고관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72</td>
 </tr>
 </tbody>
 </table>
-<p>이 기관 명칭을 협조·조정·협업의 낮고 높은 관계 단계로 해석하지 않는다. 한국어 기관명 역시 이 노트의 학습용 번역이다.</p>
-<h3>출처와 확인 범위</h3>
-<ul>
-<li>NIMS Third Edition (2017) 용어집: Incident p.64, Coordinate p.62, Assisting Agency p.61, Cooperating Agency p.62. 본문의 인쇄쪽과 전체 PDF쪽을 병기했다.</li>
-<li>FEMA IS-0288.a, <em>The Role of Voluntary Organizations in Emergency Management</em>: 사용자 제공 43쪽 PDF. Unit 3의 IG-18·19·23을 직접 대조했다. 파일명과 PDF 생성일을 정식 발행일로 확정하지 않았다.</li>
-<li><a href="https://emilms.fema.gov/is_0913a/groups/278.html">FEMA IS-0913.a Lesson 2</a>: 정의·공동활동·파트너십 구조와 기간을 직접 대조했다.</li>
-<li>사용자 제공 ChatGPT 정리문은 검토의 출발점으로 사용했으며 독립 근거로 중복 계산하지 않았다. 확인되지 않은 과정 날짜와 외부 학술인용은 본문 근거로 채택하지 않았다.</li>
-</ul></div>
-<a class="next-chapter" href="#review"><span>다음 챕터</span><strong>복습과 근거 →</strong></a>
+<p>이 기관 명칭을 협조·조정·협업의 낮고 높은 관계 단계로 해석하지 않는다. </p>
+<h3>참고자료</h3>
+<ul><li>NIMS Third Edition (2017), 제3장 pp.19–49 및 용어집 pp.61–64.</li><li>FEMA IS-0288.a, <em>The Role of Voluntary Organizations in Emergency Management</em>, Unit 3, IG-18·19·23.</li><li><a href="https://emilms.fema.gov/is_0913a/groups/278.html">FEMA IS-0913.a Lesson 2: Building Successful Partnerships</a>.</li></ul></div>
+<a class="next-chapter" href="#review"><span>다음 챕터</span><strong>복습과 출처 →</strong></a>
 </section>
 <section aria-labelledby="heading-review" class="chapter" id="review">
 <header class="chapter-header">
@@ -964,7 +956,7 @@
 <span>CHAPTER 10</span>
 <span>학습 점검</span>
 </div>
-<h2 id="heading-review">복습과 근거</h2>
+<h2 id="heading-review">복습과 출처</h2>
 <p>개념을 구별하고 조건을 확인하기</p>
 </header>
 <div class="chapter-body">
@@ -1108,13 +1100,7 @@
 </tr>
 </tbody>
 </table>
-<div class="evidence-note">
-<h3>자료와 확인 범위</h3>
-<p>NIMS 제3장 영문 발췌본(인쇄 pp.19–49)을 직접 대조하고 별도 읽기 전용 검토를 반영했습니다. 개념·조건은 원문에 근거하며 그림 읽는 법과 복습 질문은 학습용 설명입니다.</p>
-<p>번역본 정밀 교열과 한국 긴급구조통제단 제도 비교는 미검증입니다. 발췌본에는 발행연도가 표시되지 않으며 기존 전체 교재의 등록 정보는 2017년 제3판입니다. 영어 그림·조직 관계·주석은 원문을 유지했습니다.</p>
-<p>보충 용어는 NIMS 전체 용어집과 FEMA IS-288.a·IS-913.a를 대조했다. 제3장 원문과 보충 교육자료의 출처·맥락을 구분하고, 한국어 표현은 학습용 번역으로 표시했다. <a href="terms.md">용어 정리 문서 보기 →</a></p>
-<p>NotebookLM 응답의 인용 payload가 비어 있어 직접 원문으로 대조했습니다. 같은 원문에 대한 응답과 후속 질의를 별개의 독립 증거로 세지 않았습니다.</p>
-</div>
+<div class="evidence-note"><h3>참고자료</h3><p>본문의 쪽수는 NIMS 영문 인쇄쪽을 기준으로 합니다. 그림에는 인쇄쪽과 PDF쪽을 함께 표시했습니다.</p><p>NIMS 제3장: 지휘 및 조정(pp.19–49). 보충 용어: NIMS 용어집과 FEMA IS-288.a·IS-913.a. <a href="terms.md">용어 정리</a> · <a href="command-comparison.md">IC·UC·AC 비교</a></p></div>
 </div>
 <a class="next-chapter" href="#top">
 <span>학습 마무리</span>
@@ -1126,7 +1112,7 @@
 <strong>NIMS 제3장 · 지휘 및 조정</strong>
 <p>FEMA NIMS 영문 원문 기반 한국어 학습 정리<br/>그림: FEMA NIMS Figure 3–10 · 한국어 설명: 원문 대조 학습 정리</p>
 <a href="https://github.com/dorobo99-prog/nims-chapter3-study">Markdown 자료와 제작 파일 보기 ↗</a>
-<p class="site-version">v1.2.0 · 2026-10-09 · <a href="https://github.com/dorobo99-prog/nims-chapter3-study/blob/main/CHANGELOG.md">버전 변경 이력</a></p></footer>
+<p class="site-version">v1.2.1 · 2026-10-09 · <a href="https://github.com/dorobo99-prog/nims-chapter3-study/blob/main/CHANGELOG.md">버전 변경 이력</a></p></footer>
 </div>
 </div>
 <dialog aria-labelledby="viewer-title" id="image-viewer">
