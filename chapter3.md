@@ -22,8 +22,8 @@
 | --- | --- |
 | 19 | 네 책임 영역과 다기관조정체계(Multiagency Coordination Systems, MACS) |
 | 20–23 | NIMS 관리특성(NIMS Management Characteristics) |
-| 24–32 | ICS, 지휘·참모, 정보·수사, 시설, 사고관리팀(IMT) |
-| 33–34 | 사고관리지원팀(IMAT), 사고복합체(Incident Complex), 광역지휘부(Area Command) |
+| 24–32 | ICS, 지휘·참모, 정보·수사, 시설, 사건관리팀(IMT) |
+| 33–34 | 사건관리지원팀(IMAT), 사건복합체(Incident Complex), 광역지휘부(Area Command) |
 | 35–39 | EOC 기능·조직형태·가동 및 가동 해제 |
 | 40–41 | MAC Group |
 | 42–46 | JIS, 공보관(PIO), 합동정보센터(JIC), 대국민 정보처리 |
@@ -51,7 +51,7 @@
 | 1 | 공통 용어(Common Terminology) | 조직기능·자원·시설 명칭을 표준화한다. |
 | 2 | 모듈형 조직(Modular Organization) | 규모·복잡성·위험에 따라 기능을 확장하고 위임한다. 미배치 기능의 책임은 상위 감독자에게 남는다. |
 | 3 | 목표관리(Management by Objectives) | 측정 가능한 목표, 전략·전술·임무, 배정, 결과 기록을 연결한다. |
-| 4 | 사건행동계획(Incident Action Planning) | 목표·전술·임무를 계획으로 전달한다. 모든 사건에 행동계획이 필요하지만 모두 서면일 필요는 없다. |
+| 4 | 사건행동계획 수립(Incident Action Planning) | 목표·전술·임무를 계획으로 전달한다. 모든 사건에 행동계획이 필요하지만 모두 서면일 필요는 없다. |
 | 5 | 적정 통할범위(Manageable Span of Control) | 감독 능력에 맞게 보고·감독 관계를 구성한다. |
 | 6 | 사건시설과 위치(Incident Facilities and Locations) | 상황에 따라 지휘·지원 시설을 정하고 위치를 식별한다. |
 | 7 | 종합 자원관리(Comprehensive Resource Management) | 인력·장비·팀·물자·시설의 최신 현황을 관리한다. |
@@ -82,7 +82,7 @@ ICS의 다섯 주요 기능은 지휘(Command), 작전(Operations), 계획(Plann
 - **정보·수사 기능(Intelligence/Investigations Function):** 범죄·테러뿐 아니라 역학조사 등에도 필요할 수 있다. 배치 위치와 범위는 지휘부가 결정하며 상세 선택지는 이 발췌본 밖 Appendix A에 있다. (pp.30–31)
 
 
-### 그림 3. 단일 사고지휘관의 ICS 조직
+### 그림 3. 단일 현장지휘관의 ICS 조직
 
 ![NIMS 원문 그림](images/figure-03.png)
 
@@ -94,7 +94,7 @@ ICS의 다섯 주요 기능은 지휘(Command), 작전(Operations), 계획(Plann
 
 *원문 Figure 4, 인쇄 p.26 / PDF p.8. 원문 도식을 그대로 추출했으며 한국어 제목은 학습용 설명이다.*
 
-### 시설과 사고관리팀
+### 시설과 사건관리팀
 
 | 명칭 | 역할 | 인쇄 페이지 |
 | --- | --- | --- |
@@ -102,8 +102,8 @@ ICS의 다섯 주요 기능은 지휘(Command), 작전(Operations), 계획(Plann
 | 대기구역(Staging Area) | 임무 배정을 기다리는 자원을 배치·추적. 작전부서가 관리한다. | 31 |
 | 사건기지(Incident Base) | 주요 지원활동의 거점. ICP와 같은 위치일 수 있다. | 31 |
 | 캠프(Camp) | 사건기지의 위성 지원거점. 식사·숙박·위생 등을 제공한다. | 32 |
-| 사고관리팀(Incident Management Team, IMT) | ICS 자격 인력의 편성팀. 사건관리 또는 지원 임무를 맡는다. | 32 |
-| 사고관리지원팀(Incident Management Assistance Team, IMAT) | 현장·피해 관할 지원을 강조하는 팀. 일부 자원·대응 활동의 지휘통제 권한도 가질 수 있다. | 33 |
+| 사건관리팀(Incident Management Team, IMT) | ICS 자격 인력의 편성팀. 사건관리 또는 지원 임무를 맡는다. | 32 |
+| 사건관리지원팀(Incident Management Assistance Team, IMAT) | 현장·피해 관할 지원을 강조하는 팀. 일부 자원·대응 활동의 지휘통제 권한도 가질 수 있다. | 33 |
 
 
 ### 그림 5. 사건 시설별 기능
@@ -112,14 +112,14 @@ ICS의 다섯 주요 기능은 지휘(Command), 작전(Operations), 계획(Plann
 
 *원문 Figure 5, 인쇄 p.32 / PDF p.14. 원문 도식을 그대로 추출했으며 한국어 제목은 학습용 설명이다.*
 
-## 여러 사고의 관리
+## 여러 사건의 관리
 
-- **사고복합체(Incident Complex):** 같은 일반 지역의 두 개 이상 사고를 한 지휘관/통합지휘부와 하나의 ICS 조직 아래 둔다. 개별 사고는 작전부서의 Branch 또는 Division이 된다. 대형화될 사고는 별도 ICS로 관리해야 한다. (p.33)
-- **광역지휘부(Area Command):** 여러 동시 사고 또는 여러 ICS가 필요한 매우 복잡한 사고의 관리를 감독한다. 자원 경쟁·우선순위·사고 목표의 충돌을 조정한다. 개별 ICS 지휘부를 하나로 합치는 개념은 아니다. (pp.33–34)
-- **Figure 6의 관계:** Area Command는 복수 사고관리를 감독하고, EOC는 지원을 조정하며, MAC Group은 Area Command와 EOC에 정책 지침·전략 방향을 제공한다. (p.34)
+- **사건복합체(Incident Complex):** 같은 일반 지역의 두 개 이상 사건를 한 지휘관/통합지휘부와 하나의 ICS 조직 아래 둔다. 개별 사건는 작전부서의 Branch 또는 Division이 된다. 대형화될 사건는 별도 ICS로 관리해야 한다. (p.33)
+- **광역지휘부(Area Command):** 여러 동시 사건 또는 여러 ICS가 필요한 매우 복잡한 사건의 관리를 감독한다. 자원 경쟁·우선순위·사건 목표의 충돌을 조정한다. 개별 ICS 지휘부를 하나로 합치는 개념은 아니다. (pp.33–34)
+- **Figure 6의 관계:** Area Command는 복수 사건관리를 감독하고, EOC는 지원을 조정하며, MAC Group은 Area Command와 EOC에 정책 지침·전략 방향을 제공한다. (p.34)
 
 
-### 그림 6. 광역지휘부와 복수 사고지휘부
+### 그림 6. 광역지휘부와 복수 사건지휘부
 
 ![NIMS 원문 그림](images/figure-06.png)
 
@@ -201,7 +201,7 @@ JIS는 공보의 과정·절차·도구를 연결하는 체계이며, 합동정�
 
 | 번호 | 인쇄쪽 / PDF쪽 | 학습 초점 |
 | --- | --- | --- |
-| Figure 3 | 25 / 7 | 단일 사고지휘관의 ICS 예시 |
+| Figure 3 | 25 / 7 | 단일 현장지휘관의 ICS 예시 |
 | Figure 4 | 26 / 8 | 통합지휘부의 ICS 예시 |
 | Figure 5 | 32 / 14 | 사건 시설 |
 | Figure 6 | 34 / 16 | Area Command·EOC·MAC Group 관계 |
@@ -219,3 +219,7 @@ JIS는 공보의 과정·절차·도구를 연결하는 체계이며, 합동정�
 - 독립 읽기 전용 검토 후 주장·조건·쪽수를 대조하고 교정했다.
 - 복습 흐름과 번역 검토 보류 목록: [복습 정리](study-guide.md).
 - 관련 전체 교재: NIMS 전체 교재(2017년 제3판).
+
+## 번역 기준과 FEMA 보충 용어
+
+사건(Incident)은 계획된 행사·비상상황·재난을 포함한다. 일반 개념어는 사건으로 통일하고 현장지휘체계·현장지휘관·현장지휘소를 유지한다. [번역 기준과 FEMA 용어 정리](terms.md)를 함께 읽는다. 한국어는 학습용 번역이며 FEMA 보충 자료와 NIMS 제3장의 출처를 구분한다.
