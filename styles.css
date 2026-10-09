@@ -10,3 +10,5 @@
 
 .header-identity{display:flex;align-items:center;gap:10px;min-width:0}.version-badge{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 8px;border:1px solid var(--line);border-radius:4px;background:var(--tint);font:600 .68rem ui-monospace,SFMono-Regular,monospace;text-decoration:none;white-space:nowrap}.site-header{gap:8px}
 @media(max-width:420px){.header-identity{gap:6px}.version-badge{padding:0 6px;font-size:.62rem}}
+
+#command-comparison,#multiple-comparison{scroll-margin-top:100px}@media(max-width:800px){#command-comparison,#multiple-comparison{scroll-margin-top:124px}}
