@@ -12,3 +12,5 @@
 @media(max-width:420px){.header-identity{gap:6px}.version-badge{padding:0 6px;font-size:.62rem}}
 
 #command-comparison,#multiple-comparison{scroll-margin-top:100px}@media(max-width:800px){#command-comparison,#multiple-comparison{scroll-margin-top:124px}}
+
+#ics-staff{scroll-margin-top:100px}@media(max-width:800px){#ics-staff{scroll-margin-top:124px}}
