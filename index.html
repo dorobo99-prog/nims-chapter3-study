@@ -1,18 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NIMS 제3장 지휘 및 조정을 원문 그림 8개와 함께 학습합니다. 관리특성, ICS, EOC, MAC Group, JIS의 관계와 예외 조건을 확인하세요.">
-<meta name="theme-color" content="#163b50">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="NIMS 제3장 지휘 및 조정을 원문 그림 8개와 함께 학습합니다. 관리특성, ICS, EOC, MAC Group, JIS의 관계와 예외 조건을 확인하세요." name="description"/>
+<meta content="#163b50" name="theme-color"/>
 <title>NIMS 제3장 | 지휘 및 조정 정리노트</title>
-<link rel="stylesheet" href="styles.css">
-<script src="app.js" defer>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="app.js">
 </script>
-</head>
+<meta content="1.1.0" name="version"/></head>
 <body id="top">
 <a class="skip-link" href="#overview">본문으로 이동</a>
-<div class="reading-progress" aria-hidden="true">
+<div aria-hidden="true" class="reading-progress">
 <span>
 </span>
 </div>
@@ -29,54 +30,54 @@
 <p class="toc-label">학습 목차</p>
 <ol>
 <li>
-<a href="#overview" data-chapter="overview">
+<a data-chapter="overview" href="#overview">
 <span>01</span>제3장의 전체 그림</a>
 </li>
 <li>
-<a href="#principles" data-chapter="principles">
+<a data-chapter="principles" href="#principles">
 <span>02</span>공통 운영 원칙</a>
 </li>
 <li>
-<a href="#ics" data-chapter="ics">
-<span>03</span>현장지휘체계 ICS</a>
+<a data-chapter="ics" href="#ics">
+<span>03</span>사고지휘체계 ICS</a>
 </li>
 <li>
-<a href="#multiple" data-chapter="multiple">
-<span>04</span>복수 사건 관리</a>
+<a data-chapter="multiple" href="#multiple">
+<span>04</span>복수 사고 관리</a>
 </li>
 <li>
-<a href="#eoc" data-chapter="eoc">
+<a data-chapter="eoc" href="#eoc">
 <span>05</span>지원·조정 EOC</a>
 </li>
 <li>
-<a href="#mac" data-chapter="mac">
+<a data-chapter="mac" href="#mac">
 <span>06</span>정책 판단 MAC Group</a>
 </li>
 <li>
-<a href="#jis" data-chapter="jis">
+<a data-chapter="jis" href="#jis">
 <span>07</span>공공정보 JIS·JIC</a>
 </li>
 <li>
-<a href="#connections" data-chapter="connections">
+<a data-chapter="connections" href="#connections">
 <span>08</span>체계 간 연계</a>
 </li>
 <li>
-<a href="#terms" data-chapter="terms">
+<a data-chapter="terms" href="#terms">
 <span>09</span>번역 기준과 용어 구분</a>
 </li>
 <li>
-<a href="#review" data-chapter="review">
+<a data-chapter="review" href="#review">
 <span>10</span>복습과 근거</a>
 </li>
 </ol>
-<p class="toc-note">영문 인쇄 pp.19–49<br>원문 그림 3–10 수록</p>
+<p class="toc-note">영문 인쇄 pp.19–49<br/>원문 그림 3–10 수록</p>
 </nav>
 </aside>
 <div class="content-column">
 <header class="hero">
 <div class="hero-subject">NIMS · COMMAND AND COORDINATION</div>
-<h1>지휘는 명확하게,<br>대응은 함께.</h1>
-<p>현장지휘, 지원, 정책 판단과 공공정보.<br>네 기능의 개념과 관계를 원문에 따라 정리합니다.</p>
+<h1>지휘는 명확하게,<br/>대응은 함께.</h1>
+<p>현장지휘, 지원, 정책 판단과 공공정보.<br/>네 기능의 개념과 관계를 원문에 따라 정리합니다.</p>
 <a class="start-link" href="#overview">제3장 학습 시작 ↓</a>
 </header>
 <details class="mobile-toc">
@@ -87,56 +88,56 @@
 <nav aria-label="모바일 챕터 목차">
 <ol>
 <li>
-<a href="#overview" data-chapter="overview">
+<a data-chapter="overview" href="#overview">
 <span>01</span>제3장의 전체 그림</a>
 </li>
 <li>
-<a href="#principles" data-chapter="principles">
+<a data-chapter="principles" href="#principles">
 <span>02</span>공통 운영 원칙</a>
 </li>
 <li>
-<a href="#ics" data-chapter="ics">
-<span>03</span>현장지휘체계 ICS</a>
+<a data-chapter="ics" href="#ics">
+<span>03</span>사고지휘체계 ICS</a>
 </li>
 <li>
-<a href="#multiple" data-chapter="multiple">
-<span>04</span>복수 사건 관리</a>
+<a data-chapter="multiple" href="#multiple">
+<span>04</span>복수 사고 관리</a>
 </li>
 <li>
-<a href="#eoc" data-chapter="eoc">
+<a data-chapter="eoc" href="#eoc">
 <span>05</span>지원·조정 EOC</a>
 </li>
 <li>
-<a href="#mac" data-chapter="mac">
+<a data-chapter="mac" href="#mac">
 <span>06</span>정책 판단 MAC Group</a>
 </li>
 <li>
-<a href="#jis" data-chapter="jis">
+<a data-chapter="jis" href="#jis">
 <span>07</span>공공정보 JIS·JIC</a>
 </li>
 <li>
-<a href="#connections" data-chapter="connections">
+<a data-chapter="connections" href="#connections">
 <span>08</span>체계 간 연계</a>
 </li>
 <li>
-<a href="#terms" data-chapter="terms">
+<a data-chapter="terms" href="#terms">
 <span>09</span>번역 기준과 용어 구분</a>
 </li>
 <li>
-<a href="#review" data-chapter="review">
+<a data-chapter="review" href="#review">
 <span>10</span>복습과 근거</a>
 </li>
 </ol>
 </nav>
 </details>
-<div class="responsibility-strip" aria-label="네 책임 영역">
+<div aria-label="네 책임 영역" class="responsibility-strip">
 <span>현장 전술</span>
 <span>대응 지원</span>
 <span>정책 판단</span>
 <span>대국민 소통</span>
 </div>
 <main>
-<section id="overview" class="chapter" aria-labelledby="heading-overview">
+<section aria-labelledby="heading-overview" class="chapter" id="overview">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 01</span>
@@ -146,8 +147,8 @@
 <p>네 기능을 연결하는 공통 체계</p>
 </header>
 <div class="chapter-body">
-<p><strong>번역 기준:</strong> 사건(Incident)은 대응이 필요한 자연적·인위적 발생이며, NIMS에서는 계획된 행사와 비상상황·재난도 포함한다. 이 노트는 일반 개념어를 ‘사건’으로 통일한다. <a href="#terms">번역 기준과 FEMA 보충 용어 보기 →</a></p>
-<p>지휘 및 조정(Command and Coordination)은 현장 전술, 대응 지원, 정책적 판단, 대국민 소통을 연결하는 체계다. 공통 용어·조직·절차로 여러 기관의 활동을 맞추면서 각 기관의 권한·책임을 유지한다. 현장지휘체계(Incident Command System, ICS), 비상운영센터(Emergency Operations Center, EOC), 다기관조정그룹(Multiagency Coordination Group, MAC Group), 합동정보시스템(Joint Information System, JIS)이 이 기능의 실행과 연계에 참여한다. (인쇄 p.19)</p>
+<p><strong>번역 기준:</strong> 사고(Incident)는 인명·재산 보호를 위한 대응이 필요한 자연적·인위적 발생이다. NIMS에서는 재난·비상상황·계획행사까지 포함하는 포괄적 개념으로 사용한다. 이 노트는 Incident를 사고로 통일한다. <a href="#terms">번역 기준과 FEMA 보충 용어 보기 →</a></p>
+<p>지휘 및 조정(Command and Coordination)은 현장 전술, 대응 지원, 정책적 판단, 대국민 소통을 연결하는 체계다. 공통 용어·조직·절차로 여러 기관의 활동을 맞추면서 각 기관의 권한·책임을 유지한다. 사고지휘체계(Incident Command System, ICS), 비상운영센터(Emergency Operations Center, EOC), 다기관조정그룹(Multiagency Coordination Group, MAC Group), 합동정보시스템(Joint Information System, JIS)이 이 기능의 실행과 연계에 참여한다. (인쇄 p.19)</p>
 <blockquote>
 <p>[!important] 근거와 범위
 사용자 요청 “자료는 직접 접근해서 읽어봐”에 따라 영문 PDF를 직접 대조했다. 발췌본은 PDF 31쪽이며 인쇄 pp.19–49에 해당한다. 아래 페이지는 모두 영문 인쇄 페이지다. 번역본은 제공되지 않았으므로 번역 오류·번역본 페이지 대응은 검증하지 않았다. 미국 체계에 대한 교재 설명이며 한국 제도와의 동일성을 뜻하지 않는다.</p>
@@ -164,7 +165,7 @@
 <tbody>
 <tr>
 <td data-label="구성요소">ICS</td>
-<td data-label="주된 역할">현장 사건관리의 지휘·통제·조정</td>
+<td data-label="주된 역할">현장 사고관리의 지휘·통제·조정</td>
 <td data-label="설명의 경계">ICS에도 조정 기능이 있다. ‘지휘는 ICS, 조정은 EOC’라는 완전한 이분법은 부정확하다. pp.24–25</td>
 </tr>
 <tr>
@@ -191,7 +192,7 @@
 <strong>공통 운영 원칙 →</strong>
 </a>
 </section>
-<section id="principles" class="chapter" aria-labelledby="heading-principles">
+<section aria-labelledby="heading-principles" class="chapter" id="principles">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 02</span>
@@ -228,8 +229,8 @@
 </tr>
 <tr>
 <td data-label="번호">4</td>
-<td data-label="관리특성">사건행동계획 수립(Incident Action Planning)</td>
-<td data-label="핵심 의미">목표·전술·임무를 계획으로 전달한다. 모든 사건에 행동계획이 필요하지만 모두 서면일 필요는 없다.</td>
+<td data-label="관리특성">사고대응계획 수립(Incident Action Planning)</td>
+<td data-label="핵심 의미">목표·전술·임무를 계획으로 전달한다. 모든 사고에 대응계획이 필요하지만 모두 서면일 필요는 없다.</td>
 </tr>
 <tr>
 <td data-label="번호">5</td>
@@ -238,7 +239,7 @@
 </tr>
 <tr>
 <td data-label="번호">6</td>
-<td data-label="관리특성">사건시설과 위치(Incident Facilities and Locations)</td>
+<td data-label="관리특성">사고시설과 위치(Incident Facilities and Locations)</td>
 <td data-label="핵심 의미">상황에 따라 지휘·지원 시설을 정하고 위치를 식별한다.</td>
 </tr>
 <tr>
@@ -259,7 +260,7 @@
 <tr>
 <td data-label="번호">10</td>
 <td data-label="관리특성">통합지휘(Unified Command)</td>
-<td data-label="핵심 의미">공동 승인 목표로 사건을 관리하며 참여 기관의 권한·책임을 유지한다.</td>
+<td data-label="핵심 의미">공동 승인 목표로 사고을 관리하며 참여 기관의 권한·책임을 유지한다.</td>
 </tr>
 <tr>
 <td data-label="번호">11</td>
@@ -279,16 +280,16 @@
 <tr>
 <td data-label="번호">14</td>
 <td data-label="관리특성">정보 및 첩보 관리(Information and Intelligence Management)</td>
-<td data-label="핵심 의미">사건 관련 정보·첩보를 수집·분석·평가·공유·관리한다.</td>
+<td data-label="핵심 의미">사고 관련 정보·첩보를 수집·분석·평가·공유·관리한다.</td>
 </tr>
 </tbody>
 </table>
 <h3>오해하기 쉬운 조건</h3>
 <ul>
 <li>
-<strong>1:5는 권장 기준이다.</strong> 최적 통할범위를 감독자 1명당 부하 5명으로 제시하지만, 실제 대응에서는 상당히 다른 비율도 필요하다. 사건·임무·위험·안전·경험·통신 접근성을 고려해 판단한다. (pp.21–22)</li>
+<strong>1:5는 권장 기준이다.</strong> 최적 통할범위를 감독자 1명당 부하 5명으로 제시하지만, 실제 대응에서는 상당히 다른 비율도 필요하다. 사고·임무·위험·안전·경험·통신 접근성을 고려해 판단한다. (pp.21–22)</li>
 <li>
-<strong>서면 IAP의 필요성은 조건부다.</strong> 복잡성, 지휘 판단, 법적 요구에 따른다. 예고 없는 사건의 첫 작전기간에는 정식 IAP가 없을 수 있다. 작전기간이 길어지거나 복잡해지고 여러 관할·기관이 참여하면 서면 IAP의 중요성이 커진다. (p.21)</li>
+<strong>서면 IAP의 필요성은 조건부다.</strong> 복잡성, 지휘 판단, 법적 요구에 따른다. 예고 없는 사고의 첫 작전기간에는 정식 IAP가 없을 수 있다. 작전기간이 길어지거나 복잡해지고 여러 관할·기관이 참여하면 서면 IAP의 중요성이 커진다. (p.21)</li>
 <li>
 <strong>통합지휘와 지휘 일원성은 양립한다.</strong> 기관 수준에서는 공동 목표·전략·단일 IAP를 정하며, 개인 수준에서는 한 명에게 보고한다. 각 기관의 인력·자원에 대한 권한·책임·책임성은 유지된다. (pp.22–26)</li>
 <li>
@@ -297,16 +298,16 @@
 </div>
 <a class="next-chapter" href="#ics">
 <span>다음 챕터</span>
-<strong>현장지휘체계 ICS →</strong>
+<strong>사고지휘체계 ICS →</strong>
 </a>
 </section>
-<section id="ics" class="chapter" aria-labelledby="heading-ics">
+<section aria-labelledby="heading-ics" class="chapter" id="ics">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 03</span>
 <span>pp.24–33</span>
 </div>
-<h2 id="heading-ics">현장지휘체계 ICS</h2>
+<h2 id="heading-ics">사고지휘체계 ICS</h2>
 <p>공동 목표와 명확한 보고 관계</p>
 </header>
 <div class="chapter-body">
@@ -323,16 +324,16 @@
 <strong>정보·수사 기능(Intelligence/Investigations Function):</strong> 범죄·테러뿐 아니라 역학조사 등에도 필요할 수 있다. 배치 위치와 범위는 지휘부가 결정하며 상세 선택지는 이 발췌본 밖 Appendix A에 있다. (pp.30–31)</li>
 </ul>
 <figure class="source-figure" id="figure-3">
-<a aria-label="그림 3: 단일 현장지휘관의 ICS 조직, 크게 보기" class="figure-open" href="images/figure-03.png">
-<img alt="원문 Figure 3: 단일 현장지휘관의 ICS 조직" height="987" loading="lazy" src="images/figure-03.png" width="1586"/>
+<a aria-label="그림 3: 단일 사고지휘관의 ICS 조직, 크게 보기" class="figure-open" href="images/figure-03.png">
+<img alt="원문 Figure 3: 단일 사고지휘관의 ICS 조직" height="987" loading="lazy" src="images/figure-03.png" width="1586"/>
 <span class="figure-hint">그림 크게 보기 ↗</span>
 </a>
 <figcaption>
-<strong>Figure 3 · 단일 현장지휘관의 ICS 조직</strong>
+<strong>Figure 3 · 단일 사고지휘관의 ICS 조직</strong>
 <span>영문 인쇄 p.25 / PDF p.7 · FEMA NIMS 원문</span>
 </figcaption>
 <p class="figure-reading">
-<span>읽는 법</span>한 명의 현장지휘관 아래에서 지휘참모와 네 기능 부서의 보고 관계를 확인하세요.</p>
+<span>읽는 법</span>한 명의 사고지휘관 아래에서 지휘참모와 네 기능 부서의 보고 관계를 확인하세요.</p>
 </figure>
 <figure class="source-figure" id="figure-4">
 <a aria-label="그림 4: 통합지휘부의 ICS 조직, 크게 보기" class="figure-open" href="images/figure-04.png">
@@ -346,7 +347,7 @@
 <p class="figure-reading">
 <span>읽는 법</span>공동 지휘부 아래에서도 기능조직과 개인별 보고 관계는 명확하게 유지됩니다.</p>
 </figure>
-<h3>시설과 사건관리팀</h3>
+<h3>시설과 사고관리팀</h3>
 <table class="study-table">
 <thead>
 <tr>
@@ -367,34 +368,34 @@
 <td data-label="인쇄 페이지">31</td>
 </tr>
 <tr>
-<td data-label="명칭">사건기지(Incident Base)</td>
+<td data-label="명칭">사고기지(Incident Base)</td>
 <td data-label="역할">주요 지원활동의 거점. ICP와 같은 위치일 수 있다.</td>
 <td data-label="인쇄 페이지">31</td>
 </tr>
 <tr>
 <td data-label="명칭">캠프(Camp)</td>
-<td data-label="역할">사건기지의 위성 지원거점. 식사·숙박·위생 등을 제공한다.</td>
+<td data-label="역할">사고기지의 위성 지원거점. 식사·숙박·위생 등을 제공한다.</td>
 <td data-label="인쇄 페이지">32</td>
 </tr>
 <tr>
-<td data-label="명칭">사건관리팀(Incident Management Team, IMT)</td>
-<td data-label="역할">ICS 자격 인력의 편성팀. 사건관리 또는 지원 임무를 맡는다.</td>
+<td data-label="명칭">사고관리팀(Incident Management Team, IMT)</td>
+<td data-label="역할">ICS 자격 인력의 편성팀. 사고관리 또는 지원 임무를 맡는다.</td>
 <td data-label="인쇄 페이지">32</td>
 </tr>
 <tr>
-<td data-label="명칭">사건관리지원팀(Incident Management Assistance Team, IMAT)</td>
+<td data-label="명칭">사고관리지원팀(Incident Management Assistance Team, IMAT)</td>
 <td data-label="역할">현장·피해 관할 지원을 강조하는 팀. 일부 자원·대응 활동의 지휘통제 권한도 가질 수 있다.</td>
 <td data-label="인쇄 페이지">33</td>
 </tr>
 </tbody>
 </table>
 <figure class="source-figure" id="figure-5">
-<a aria-label="그림 5: 사건 시설별 기능, 크게 보기" class="figure-open" href="images/figure-05.png">
-<img alt="원문 Figure 5: 사건 시설별 기능" height="913" loading="lazy" src="images/figure-05.png" width="1586"/>
+<a aria-label="그림 5: 사고 시설별 기능, 크게 보기" class="figure-open" href="images/figure-05.png">
+<img alt="원문 Figure 5: 사고 시설별 기능" height="913" loading="lazy" src="images/figure-05.png" width="1586"/>
 <span class="figure-hint">그림 크게 보기 ↗</span>
 </a>
 <figcaption>
-<strong>Figure 5 · 사건 시설별 기능</strong>
+<strong>Figure 5 · 사고 시설별 기능</strong>
 <span>영문 인쇄 p.32 / PDF p.14 · FEMA NIMS 원문</span>
 </figcaption>
 <p class="figure-reading">
@@ -403,38 +404,38 @@
 </div>
 <a class="next-chapter" href="#multiple">
 <span>다음 챕터</span>
-<strong>복수 사건 관리 →</strong>
+<strong>복수 사고 관리 →</strong>
 </a>
 </section>
-<section id="multiple" class="chapter" aria-labelledby="heading-multiple">
+<section aria-labelledby="heading-multiple" class="chapter" id="multiple">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 04</span>
 <span>pp.33–34</span>
 </div>
-<h2 id="heading-multiple">복수 사건 관리</h2>
+<h2 id="heading-multiple">복수 사고 관리</h2>
 <p>하나로 묶기와 여러 지휘부 감독하기</p>
 </header>
 <div class="chapter-body">
 <ul>
 <li>
-<strong>사건복합체(Incident Complex):</strong> 같은 일반 지역의 두 개 이상 사건를 한 지휘관/통합지휘부와 하나의 ICS 조직 아래 둔다. 개별 사건는 작전부서의 Branch 또는 Division이 된다. 대형화될 사건는 별도 ICS로 관리해야 한다. (p.33)</li>
+<strong>사고복합체(Incident Complex):</strong> 같은 일반 지역의 두 개 이상 사고를 한 지휘관/통합지휘부와 하나의 ICS 조직 아래 둔다. 개별 사고는 작전부서의 Branch 또는 Division이 된다. 대형화될 사고는 별도 ICS로 관리해야 한다. (p.33)</li>
 <li>
-<strong>광역지휘부(Area Command):</strong> 여러 동시 사건 또는 여러 ICS가 필요한 매우 복잡한 사건의 관리를 감독한다. 자원 경쟁·우선순위·사건 목표의 충돌을 조정한다. 개별 ICS 지휘부를 하나로 합치는 개념은 아니다. (pp.33–34)</li>
+<strong>광역지휘부(Area Command):</strong> 여러 동시 사고 또는 여러 ICS가 필요한 매우 복잡한 사고의 관리를 감독한다. 자원 경쟁·우선순위·사고 목표의 충돌을 조정한다. 개별 ICS 지휘부를 하나로 합치는 개념은 아니다. (pp.33–34)</li>
 <li>
-<strong>Figure 6의 관계:</strong> Area Command는 복수 사건관리를 감독하고, EOC는 지원을 조정하며, MAC Group은 Area Command와 EOC에 정책 지침·전략 방향을 제공한다. (p.34)</li>
+<strong>Figure 6의 관계:</strong> Area Command는 복수 사고관리를 감독하고, EOC는 지원을 조정하며, MAC Group은 Area Command와 EOC에 정책 지침·전략 방향을 제공한다. (p.34)</li>
 </ul>
 <figure class="source-figure" id="figure-6">
-<a aria-label="그림 6: 광역지휘부와 복수 사건지휘부, 크게 보기" class="figure-open" href="images/figure-06.png">
-<img alt="원문 Figure 6: 광역지휘부와 복수 사건지휘부" height="563" loading="lazy" src="images/figure-06.png" width="1586"/>
+<a aria-label="그림 6: 광역지휘부와 복수 사고지휘부, 크게 보기" class="figure-open" href="images/figure-06.png">
+<img alt="원문 Figure 6: 광역지휘부와 복수 사고지휘부" height="563" loading="lazy" src="images/figure-06.png" width="1586"/>
 <span class="figure-hint">그림 크게 보기 ↗</span>
 </a>
 <figcaption>
-<strong>Figure 6 · 광역지휘부와 복수 사건지휘부</strong>
+<strong>Figure 6 · 광역지휘부와 복수 사고지휘부</strong>
 <span>영문 인쇄 p.34 / PDF p.16 · FEMA NIMS 원문</span>
 </figcaption>
 <p class="figure-reading">
-<span>읽는 법</span>복수 사건지휘부의 감독 관계와 EOC의 지원 조정 관계를 구별하세요. MAC Group의 정책 역할은 원문 설명에 제시됩니다.</p>
+<span>읽는 법</span>복수 사고지휘부의 감독 관계와 EOC의 지원 조정 관계를 구별하세요. MAC Group의 정책 역할은 원문 설명에 제시됩니다.</p>
 </figure>
 </div>
 <a class="next-chapter" href="#eoc">
@@ -442,7 +443,7 @@
 <strong>지원·조정 EOC →</strong>
 </a>
 </section>
-<section id="eoc" class="chapter" aria-labelledby="heading-eoc">
+<section aria-labelledby="heading-eoc" class="chapter" id="eoc">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 05</span>
@@ -458,7 +459,7 @@
 <li>
 <strong>ICS형 또는 유사형(ICS or ICS-like):</strong> 현장 조직과 대응되는 구조를 쓰되 지원·조정 성격에 맞게 직책명을 조정할 수 있다.</li>
 <li>
-<strong>사건지원모형(Incident Support Model, ISM):</strong> 상황인식을 계획에서 분리하고 작전·지원 기능을 사건지원 구조로 결합한다. 자원 확보·주문·추적을 간소화한다.</li>
+<strong>사고지원모형(Incident Support Model, ISM):</strong> 상황인식을 계획에서 분리하고 작전·지원 기능을 사고지원 구조로 결합한다. 자원 확보·주문·추적을 간소화한다.</li>
 <li>
 <strong>부서형(Departmental):</strong> 평시 부서·기관 관계를 활용한다. 비상관리 담당자 또는 고위 책임자가 기관 간 활동을 조정한다.</li>
 </ol>
@@ -475,12 +476,12 @@
 <span>읽는 법</span>현장 ICS와 유사한 구조지만 부서 명칭은 조정 기능을 강조합니다.</p>
 </figure>
 <figure class="source-figure" id="figure-8">
-<a aria-label="그림 8: 사건지원모형(ISM) EOC 조직, 크게 보기" class="figure-open" href="images/figure-08.png">
-<img alt="원문 Figure 8: 사건지원모형(ISM) EOC 조직" height="713" loading="lazy" src="images/figure-08.png" width="1586"/>
+<a aria-label="그림 8: 사고지원모형(ISM) EOC 조직, 크게 보기" class="figure-open" href="images/figure-08.png">
+<img alt="원문 Figure 8: 사고지원모형(ISM) EOC 조직" height="713" loading="lazy" src="images/figure-08.png" width="1586"/>
 <span class="figure-hint">그림 크게 보기 ↗</span>
 </a>
 <figcaption>
-<strong>Figure 8 · 사건지원모형(ISM) EOC 조직</strong>
+<strong>Figure 8 · 사고지원모형(ISM) EOC 조직</strong>
 <span>영문 인쇄 p.37 / PDF p.19 · FEMA NIMS 원문</span>
 </figcaption>
 <p class="figure-reading">
@@ -516,12 +517,12 @@
 <tr>
 <td data-label="수준">2</td>
 <td data-label="원문 명칭">Enhanced Steady-State/Partial Activation</td>
-<td data-label="내용">일부 구성원이 신뢰할 만한 위협을 감시하거나 발전 가능성이 있는 사건을 지원</td>
+<td data-label="내용">일부 구성원이 신뢰할 만한 위협을 감시하거나 발전 가능성이 있는 사고을 지원</td>
 </tr>
 <tr>
 <td data-label="수준">1</td>
 <td data-label="원문 명칭">Full Activation</td>
-<td data-label="내용">주요 사건·신뢰할 만한 위협에 대응하도록 지원기관 인력을 포함한 EOC팀 가동</td>
+<td data-label="내용">주요 사고·신뢰할 만한 위협에 대응하도록 지원기관 인력을 포함한 EOC팀 가동</td>
 </tr>
 </tbody>
 </table>
@@ -532,7 +533,7 @@
 <strong>정책 판단 MAC Group →</strong>
 </a>
 </section>
-<section id="mac" class="chapter" aria-labelledby="heading-mac">
+<section aria-labelledby="heading-mac" class="chapter" id="mac">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 06</span>
@@ -543,14 +544,14 @@
 </header>
 <div class="chapter-body">
 <p>관할의 법·정책에 따라 MAC Group이 추가 자원을 승인하거나 EOC·현장지휘부에 지침을 제공할 수 있다. 현장지휘 기능을 대신한다는 뜻은 아니다. (p.40)</p>
-<p>MAC Group은 기관 관리자·고위 책임자·그 대리인 등으로 구성하고 대체로 합의에 기초해 판단한다. 대리인은 자기 조직을 대표하거나 사건활동에 자원·예산을 투입할 권한을 받아야 한다. 자금·물자가 없어도 관계·정치적 영향력·전문성을 가진 기관이 참여할 수 있다. 가상 방식으로 운영할 수 있으며 EOC 인력이 지원하거나 일부 활동을 수행할 수도 있다. (pp.40–41)</p>
+<p>MAC Group은 기관 관리자·고위 책임자·그 대리인 등으로 구성하고 대체로 합의에 기초해 판단한다. 대리인은 자기 조직을 대표하거나 사고활동에 자원·예산을 투입할 권한을 받아야 한다. 자금·물자가 없어도 관계·정치적 영향력·전문성을 가진 기관이 참여할 수 있다. 가상 방식으로 운영할 수 있으며 EOC 인력이 지원하거나 일부 활동을 수행할 수도 있다. (pp.40–41)</p>
 </div>
 <a class="next-chapter" href="#jis">
 <span>다음 챕터</span>
 <strong>공공정보 JIS·JIC →</strong>
 </a>
 </section>
-<section id="jis" class="chapter" aria-labelledby="heading-jis">
+<section aria-labelledby="heading-jis" class="chapter" id="jis">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 07</span>
@@ -560,7 +561,7 @@
 <p>여러 기관의 정보를 일관된 메시지로</p>
 </header>
 <div class="chapter-body">
-<p>JIS는 공보의 과정·절차·도구를 연결하는 체계이며, 합동정보센터(Joint Information Center, JIC)는 그 활동을 수행하는 거점이다. JIC는 독립 거점·사건현장·EOC 구성요소로 설치할 수 있다. 원칙적으로 단일 JIC를 두지만 넓은 지역·복합 사건에서는 복수의 물리적 또는 가상 JIC를 둘 수 있으며 메시지와 최종 공개 권한을 조정해야 한다. (pp.42–44)</p>
+<p>JIS는 공보의 과정·절차·도구를 연결하는 체계이며, 합동정보센터(Joint Information Center, JIC)는 그 활동을 수행하는 거점이다. JIC는 독립 거점·사고현장·EOC 구성요소로 설치할 수 있다. 원칙적으로 단일 JIC를 두지만 넓은 지역·복합 사고에서는 복수의 물리적 또는 가상 JIC를 둘 수 있으며 메시지와 최종 공개 권한을 조정해야 한다. (pp.42–44)</p>
 <h3>JIC 유형 · Table 3, p.44</h3>
 <table class="study-table">
 <thead>
@@ -571,7 +572,7 @@
 </thead>
 <tbody>
 <tr>
-<td data-label="유형">사건형(Incident JIC)</td>
+<td data-label="유형">사고형(Incident JIC)</td>
 <td data-label="기능">현장 관련 PIO의 공동 근무 거점. EOC에 둘 수 있다.</td>
 </tr>
 <tr>
@@ -584,11 +585,11 @@
 </tr>
 <tr>
 <td data-label="유형">광역형(Area JIC)</td>
-<td data-label="기능">넓은 지역의 복수 사건 ICS를 지원한다.</td>
+<td data-label="기능">넓은 지역의 복수 사고 ICS를 지원한다.</td>
 </tr>
 <tr>
 <td data-label="유형">국가형(National JIC)</td>
-<td data-label="기능">통상 장기 사건에서 연방 사건관리를 지원한다.</td>
+<td data-label="기능">통상 장기 사고에서 연방 사고관리를 지원한다.</td>
 </tr>
 </tbody>
 </table>
@@ -599,7 +600,7 @@
 <strong>체계 간 연계 →</strong>
 </a>
 </section>
-<section id="connections" class="chapter" aria-labelledby="heading-connections">
+<section aria-labelledby="heading-connections" class="chapter" id="connections">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 08</span>
@@ -609,7 +610,7 @@
 <p>지역 대응에서 상호원조와 연방 지원으로</p>
 </header>
 <div class="chapter-body">
-<p>지역에서 확보할 수 없는 자원은 상호원조와 주·부족·영토·주간 지원으로 확대한다. 연방 개입은 주지사·부족 지도자의 요청 승인, 연방 이해관계, 법률상 권한·의무 등의 조건에 따른다. 연방은 지원 역할을 수행할 수 있고, 연방 소유지·주된 연방 관할 등에서는 주도할 수도 있다. Figure 10은 <strong>주로 지원 역할을 하는 경우</strong>의 통합을 보여주며 모든 사건의 고정 지휘구조가 아니다. (pp.47–49)</p>
+<p>지역에서 확보할 수 없는 자원은 상호원조와 주·부족·영토·주간 지원으로 확대한다. 연방 개입은 주지사·부족 지도자의 요청 승인, 연방 이해관계, 법률상 권한·의무 등의 조건에 따른다. 연방은 지원 역할을 수행할 수 있고, 연방 소유지·주된 연방 관할 등에서는 주도할 수도 있다. Figure 10은 <strong>주로 지원 역할을 하는 경우</strong>의 통합을 보여주며 모든 사고의 고정 지휘구조가 아니다. (pp.47–49)</p>
 <figure class="source-figure" id="figure-10">
 <a aria-label="그림 10: 연방정부가 지원 역할을 하는 대응 연계, 크게 보기" class="figure-open" href="images/figure-10.png">
 <img alt="원문 Figure 10: 연방정부가 지원 역할을 하는 대응 연계" height="1497" loading="lazy" src="images/figure-10.png" width="1586"/>
@@ -628,12 +629,12 @@
 <strong>번역 기준과 용어 구분 →</strong>
 </a>
 </section>
-<section id="terms" class="chapter" aria-labelledby="heading-terms">
+<section aria-labelledby="heading-terms" class="chapter" id="terms">
 <header class="chapter-header"><div class="chapter-meta"><span>CHAPTER 09</span><span>NIMS 용어집 · FEMA 보충자료</span></div>
-<h2 id="heading-terms">번역 기준과 용어 구분</h2><p>사건의 범위와 함께 일하는 방식</p></header>
+<h2 id="heading-terms">번역 기준과 용어 구분</h2><p>사고의 범위와 함께 일하는 방식</p></header>
 <div class="chapter-body"><h3>Incident는 무엇을 포함하는가?</h3>
-<p>NIMS 용어집은 사건(Incident)을 생명·재산 보호를 위해 대응이 필요한 자연적 또는 인위적 발생으로 정의한다. 이 문서에서는 <strong>계획된 행사(planned events)와 모든 종류·규모의 비상상황·재난도 포함</strong>한다. 따라서 ‘사고’만으로 번역하면 원문의 범위가 좁아진다. (NIMS 용어집 인쇄 p.64 / 전체 PDF p.74)</p>
-<p>이 정리노트는 일반 개념어를 <strong>사건(Incident)</strong>으로 통일한다. 교통사고·폭발사고 같은 구체적 사고의 맥락에서는 ‘사고’를 사용한다. 한국어 ‘사건’만으로 계획된 행사까지 자연스럽게 전달되지는 않으므로, 첫 등장에 범위를 설명한다. 다음 표현은 공식 한국어 번역을 확인한 결과가 아니라 원문 의미를 보존하기 위한 학습용 편집 기준이다.</p>
+<p><strong>사고(Incident)</strong>는 인명 또는 재산 보호를 위한 대응이 필요한 자연적·인위적 발생을 뜻한다. NIMS에서는 <strong>재난·비상상황·계획행사까지 포함하는 포괄적 개념</strong>으로 사용한다. 계획행사는 대규모 행사에 한정하지 않는다. (NIMS 용어집 인쇄 p.64 / 전체 PDF p.74)</p>
+<p>이 정리노트는 Incident를 기본적으로 <strong>사고</strong>로 통일한다. 한국어의 일상적인 사고보다 넓은 의미이므로 최초 등장에 위 범위를 명시한다. 아래 표현은 이번 학습자료의 편집 기준이며 전체 항목이 국내 공식 표준으로 확인되었다는 뜻은 아니다. 현장지휘소(Incident Command Post, ICP)는 유지한다.</p>
 <table class="study-table">
 <thead>
 <tr>
@@ -644,19 +645,19 @@
 <tbody>
 <tr>
 <td data-label="원어">Incident</td>
-<td data-label="이 노트의 표현">사건</td>
+<td data-label="이 노트의 표현">사고</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Management</td>
-<td data-label="이 노트의 표현">사건관리</td>
+<td data-label="이 노트의 표현">사고관리</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Command System (ICS)</td>
-<td data-label="이 노트의 표현">현장지휘체계</td>
+<td data-label="이 노트의 표현">사고지휘체계</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Commander</td>
-<td data-label="이 노트의 표현">현장지휘관</td>
+<td data-label="이 노트의 표현">사고지휘관</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Command Post (ICP)</td>
@@ -664,27 +665,55 @@
 </tr>
 <tr>
 <td data-label="원어">Incident Action Plan (IAP)</td>
-<td data-label="이 노트의 표현">사건행동계획</td>
+<td data-label="이 노트의 표현">사고대응계획</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Action Planning</td>
-<td data-label="이 노트의 표현">사건행동계획 수립</td>
+<td data-label="이 노트의 표현">사고대응계획 수립</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Management Team (IMT)</td>
-<td data-label="이 노트의 표현">사건관리팀</td>
+<td data-label="이 노트의 표현">사고관리팀</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Management Assistance Team (IMAT)</td>
-<td data-label="이 노트의 표현">사건관리지원팀</td>
+<td data-label="이 노트의 표현">사고관리지원팀</td>
 </tr>
 <tr>
 <td data-label="원어">Incident Complex</td>
-<td data-label="이 노트의 표현">사건복합체</td>
+<td data-label="이 노트의 표현">사고복합체</td>
 </tr>
 </tbody>
 </table>
-<p>복합 용어는 모두 ‘사건지휘…’로 기계적으로 치환하지 않고 현장지휘체계·현장지휘관·현장지휘소를 사용한다.</p>
+<h4>Incident와 Accident의 구분</h4>
+<p>두 영어 용어는 번역어만으로 구분하지 않고 의미와 적용 범위를 함께 읽는다.</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>구분</th>
+<th>Incident</th>
+<th>Accident</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="구분">강조점</td>
+<td data-label="Incident">NIMS에서 대응·관리가 필요한 발생 또는 상황</td>
+<td data-label="Accident">일반적인 영어 용법에서 예기치 않은 사고</td>
+</tr>
+<tr>
+<td data-label="구분">적용 예</td>
+<td data-label="Incident">대응이 필요한 교통사고, 재난, 비상상황, 계획행사</td>
+<td data-label="Accident">교통사고·충돌사고 같은 구체적인 사고</td>
+</tr>
+<tr>
+<td data-label="구분">관계</td>
+<td data-label="Incident">대응이 필요한 Accident를 Incident로 관리할 수 있다.</td>
+<td data-label="Accident">모든 Incident가 Accident인 것은 아니다.</td>
+</tr>
+</tbody>
+</table>
+<p>이 비교는 학습용 해설이며 NIMS 용어집이 Accident를 별도로 정의한 것으로 제시하지 않는다. 두 용어를 직접 비교할 때는 영어를 병기한다.</p>
 <h3>협조·소통·조정·협업 — VOAD의 4Cs</h3>
 <p><strong>FEMA IS-288.a 보충 교육자료</strong>의 「State and Local VOAD」는 자원봉사기관 협의체(VOAD)가 기관별 자율성을 유지하며 함께 일하기 위한 네 원칙을 설명한다. NIMS 제3장의 정의문과 출처를 구분해서 읽는다. (IS-288.a 인쇄 IG-19 / PDF 21쪽)</p>
 <table class="study-table">
@@ -745,7 +774,7 @@
 <p>IS-913.a의 「Formal vs. Informal Partnerships」와 「Duration of Partnerships」는 공식·비공식 구조와 특정 기간·목표에 한정된 파트너십을 모두 다룬다. 협업의 약속에 대한 요약과 파트너십의 조직 형태·기간은 설명 대상이 다르므로 직접 모순으로 단정하지 않는다. 동시에 ‘공식적·지속적’이라는 조건을 FEMA 전체의 단일 필수 요건으로 일반화하지도 않는다.</p>
 <p>IS-913.a의 파트너십 구축 절차는 <strong>적절한 파트너 찾기 → 공유 목적·목표 설정 → 절차 합의 → 실행·지속</strong>이다. 이것은 Cooperation → Coordination → Collaboration이라는 보편적 상승 단계와 구분한다.</p>
 <h3>NIMS에서의 조정과 기관 역할</h3>
-<p>NIMS 용어집의 <strong>조정하다(Coordinate)</strong>는 특정 사건관리 책임을 수행하기 위해 필요한 정보를 관련 당사자 사이에 체계적으로 교환하는 행위다. 표제어는 명사 Coordination이 아니라 동사 Coordinate다. (인쇄 p.62 / 전체 PDF p.72)</p>
+<p>NIMS 용어집의 <strong>조정하다(Coordinate)</strong>는 특정 사고관리 책임을 수행하기 위해 필요한 정보를 관련 당사자 사이에 체계적으로 교환하는 행위다. 표제어는 명사 Coordination이 아니라 동사 Coordinate다. (인쇄 p.62 / 전체 PDF p.72)</p>
 <p>이 용어집 정의만으로 제3장의 계획·자원·지원·정책 조정 기능 전체를 정보 교환에 한정하지 않는다. Cooperation·Collaboration은 NIMS 용어집의 독립 정의 항목으로 확인하지 못했으며 본문의 협조·협업 용례와 구분한다.</p>
 <table class="study-table">
 <thead>
@@ -757,11 +786,11 @@
 <tbody>
 <tr>
 <td data-label="기관 역할">지원기관(Assisting Agency)</td>
-<td data-label="NIMS 용어집 설명의 학습용 번역">사건에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71</td>
+<td data-label="NIMS 용어집 설명의 학습용 번역">사고에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71</td>
 </tr>
 <tr>
 <td data-label="기관 역할">협조기관(Cooperating Agency)</td>
-<td data-label="NIMS 용어집 설명의 학습용 번역">사건관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72</td>
+<td data-label="NIMS 용어집 설명의 학습용 번역">사고관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72</td>
 </tr>
 </tbody>
 </table>
@@ -775,7 +804,7 @@
 </ul></div>
 <a class="next-chapter" href="#review"><span>다음 챕터</span><strong>복습과 근거 →</strong></a>
 </section>
-<section id="review" class="chapter" aria-labelledby="heading-review">
+<section aria-labelledby="heading-review" class="chapter" id="review">
 <header class="chapter-header">
 <div class="chapter-meta">
 <span>CHAPTER 10</span>
@@ -803,8 +832,8 @@
 <td data-label="구별 기준">기관 수준의 공동 목표·단일 IAP와 개인 수준의 한 명에 대한 보고</td>
 </tr>
 <tr>
-<td data-label="개념 쌍">사건복합체(Incident Complex) / 광역지휘부(Area Command)</td>
-<td data-label="구별 기준">단일 ICS 아래 복수 사건 편성과 복수 ICS 조직의 관리 감독</td>
+<td data-label="개념 쌍">사고복합체(Incident Complex) / 광역지휘부(Area Command)</td>
+<td data-label="구별 기준">단일 ICS 아래 복수 사고 편성과 복수 ICS 조직의 관리 감독</td>
 </tr>
 <tr>
 <td data-label="개념 쌍">EOC / 부서운영센터(DOC)</td>
@@ -824,7 +853,7 @@
 <p>답을 생각한 뒤 문항을 열어 확인하세요.</p>
 <details class="quiz-item">
 <summary>
-<span class="question-number">01</span>1:5는 모든 사건의 의무비율인가?</summary>
+<span class="question-number">01</span>1:5는 모든 사고의 의무비율인가?</summary>
 <div class="quiz-answer">아니오. 권장 기준이며 판단에 따라 조정한다. p.22</div>
 </details>
 <details class="quiz-item">
@@ -834,8 +863,8 @@
 </details>
 <details class="quiz-item">
 <summary>
-<span class="question-number">03</span>모든 사건에 서면 IAP가 필요한가?</summary>
-<div class="quiz-answer">아니오. 행동계획은 필요하나 서면의 필요성은 조건에 따른다. p.21</div>
+<span class="question-number">03</span>모든 사고에 서면 IAP가 필요한가?</summary>
+<div class="quiz-answer">아니오. 대응계획은 필요하나 서면의 필요성은 조건에 따른다. p.21</div>
 </details>
 <details class="quiz-item">
 <summary>
@@ -875,7 +904,7 @@
 <tr>
 <td data-label="번호">Figure 3</td>
 <td data-label="인쇄쪽 / PDF쪽">25 / 7</td>
-<td data-label="학습 초점">단일 현장지휘관의 ICS 예시</td>
+<td data-label="학습 초점">단일 사고지휘관의 ICS 예시</td>
 </tr>
 <tr>
 <td data-label="번호">Figure 4</td>
@@ -885,7 +914,7 @@
 <tr>
 <td data-label="번호">Figure 5</td>
 <td data-label="인쇄쪽 / PDF쪽">32 / 14</td>
-<td data-label="학습 초점">사건 시설</td>
+<td data-label="학습 초점">사고 시설</td>
 </tr>
 <tr>
 <td data-label="번호">Figure 6</td>
@@ -940,23 +969,23 @@
 </main>
 <footer class="site-footer">
 <strong>NIMS 제3장 · 지휘 및 조정</strong>
-<p>FEMA NIMS 영문 원문 기반 한국어 학습 정리<br>그림: FEMA NIMS Figure 3–10 · 한국어 설명: 원문 대조 학습 정리</p>
+<p>FEMA NIMS 영문 원문 기반 한국어 학습 정리<br/>그림: FEMA NIMS Figure 3–10 · 한국어 설명: 원문 대조 학습 정리</p>
 <a href="https://github.com/dorobo99-prog/nims-chapter3-study">Markdown 자료와 제작 파일 보기 ↗</a>
-</footer>
+<p class="site-version">v1.1.0 · 2026-10-09 · <a href="https://github.com/dorobo99-prog/nims-chapter3-study/blob/main/CHANGELOG.md">버전 변경 이력</a></p></footer>
 </div>
 </div>
-<dialog id="image-viewer" aria-labelledby="viewer-title">
+<dialog aria-labelledby="viewer-title" id="image-viewer">
 <div class="viewer-toolbar">
 <strong id="viewer-title">원문 그림</strong>
 <div class="viewer-controls">
-<button type="button" id="zoom-out" aria-label="그림 축소">−</button>
-<button type="button" id="zoom-in" aria-label="그림 확대">＋</button>
-<button type="button" id="zoom-fit">화면 맞춤</button>
-<button type="button" id="viewer-close">닫기</button>
+<button aria-label="그림 축소" id="zoom-out" type="button">−</button>
+<button aria-label="그림 확대" id="zoom-in" type="button">＋</button>
+<button id="zoom-fit" type="button">화면 맞춤</button>
+<button id="viewer-close" type="button">닫기</button>
 </div>
 </div>
 <div class="viewer-scroll">
-<img id="viewer-image" alt="">
+<img alt="" id="viewer-image"/>
 </div>
 <p class="viewer-help">확대한 그림은 좌우·위아래로 스크롤해서 볼 수 있습니다.</p>
 </dialog>

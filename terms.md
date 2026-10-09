@@ -2,24 +2,34 @@
 
 ## Incident는 무엇을 포함하는가?
 
-NIMS 용어집은 사건(Incident)을 생명·재산 보호를 위해 대응이 필요한 자연적 또는 인위적 발생으로 정의한다. 이 문서에서는 **계획된 행사(planned events)와 모든 종류·규모의 비상상황·재난도 포함**한다. 따라서 ‘사고’만으로 번역하면 원문의 범위가 좁아진다. (NIMS 용어집 인쇄 p.64 / 전체 PDF p.74)
+**사고(Incident)**는 인명 또는 재산 보호를 위한 대응이 필요한 자연적·인위적 발생을 뜻한다. NIMS에서는 **재난·비상상황·계획행사까지 포함하는 포괄적 개념**으로 사용한다. 계획행사는 대규모 행사에 한정하지 않는다. (NIMS 용어집 인쇄 p.64 / 전체 PDF p.74)
 
-이 정리노트는 일반 개념어를 **사건(Incident)**으로 통일한다. 교통사고·폭발사고 같은 구체적 사고의 맥락에서는 ‘사고’를 사용한다. 한국어 ‘사건’만으로 계획된 행사까지 자연스럽게 전달되지는 않으므로, 첫 등장에 범위를 설명한다. 다음 표현은 공식 한국어 번역을 확인한 결과가 아니라 원문 의미를 보존하기 위한 학습용 편집 기준이다.
+이 정리노트는 Incident를 기본적으로 **사고**로 통일한다. 한국어의 일상적인 사고보다 넓은 의미이므로 최초 등장에 위 범위를 명시한다. 아래 표현은 이번 학습자료의 편집 기준이며 전체 항목이 국내 공식 표준으로 확인되었다는 뜻은 아니다. 현장지휘소(Incident Command Post, ICP)는 유지한다.
 
 | 원어 | 이 노트의 표현 |
 | --- | --- |
-| Incident | 사건 |
-| Incident Management | 사건관리 |
-| Incident Command System (ICS) | 현장지휘체계 |
-| Incident Commander | 현장지휘관 |
+| Incident | 사고 |
+| Incident Management | 사고관리 |
+| Incident Command System (ICS) | 사고지휘체계 |
+| Incident Commander | 사고지휘관 |
 | Incident Command Post (ICP) | 현장지휘소 |
-| Incident Action Plan (IAP) | 사건행동계획 |
-| Incident Action Planning | 사건행동계획 수립 |
-| Incident Management Team (IMT) | 사건관리팀 |
-| Incident Management Assistance Team (IMAT) | 사건관리지원팀 |
-| Incident Complex | 사건복합체 |
+| Incident Action Plan (IAP) | 사고대응계획 |
+| Incident Action Planning | 사고대응계획 수립 |
+| Incident Management Team (IMT) | 사고관리팀 |
+| Incident Management Assistance Team (IMAT) | 사고관리지원팀 |
+| Incident Complex | 사고복합체 |
 
-복합 용어는 모두 ‘사건지휘…’로 기계적으로 치환하지 않고 현장지휘체계·현장지휘관·현장지휘소를 사용한다.
+### Incident와 Accident의 구분
+
+두 영어 용어는 번역어만으로 구분하지 않고 의미와 적용 범위를 함께 읽는다.
+
+| 구분 | Incident | Accident |
+| --- | --- | --- |
+| 강조점 | NIMS에서 대응·관리가 필요한 발생 또는 상황 | 일반적인 영어 용법에서 예기치 않은 사고 |
+| 적용 예 | 대응이 필요한 교통사고, 재난, 비상상황, 계획행사 | 교통사고·충돌사고 같은 구체적인 사고 |
+| 관계 | 대응이 필요한 Accident를 Incident로 관리할 수 있다. | 모든 Incident가 Accident인 것은 아니다. |
+
+이 비교는 학습용 해설이며 NIMS 용어집이 Accident를 별도로 정의한 것으로 제시하지 않는다. 두 용어를 직접 비교할 때는 영어를 병기한다.
 
 ## 협조·소통·조정·협업 — VOAD의 4Cs
 
@@ -59,14 +69,14 @@ IS-913.a의 파트너십 구축 절차는 **적절한 파트너 찾기 → 공�
 
 ## NIMS에서의 조정과 기관 역할
 
-NIMS 용어집의 **조정하다(Coordinate)**는 특정 사건관리 책임을 수행하기 위해 필요한 정보를 관련 당사자 사이에 체계적으로 교환하는 행위다. 표제어는 명사 Coordination이 아니라 동사 Coordinate다. (인쇄 p.62 / 전체 PDF p.72)
+NIMS 용어집의 **조정하다(Coordinate)**는 특정 사고관리 책임을 수행하기 위해 필요한 정보를 관련 당사자 사이에 체계적으로 교환하는 행위다. 표제어는 명사 Coordination이 아니라 동사 Coordinate다. (인쇄 p.62 / 전체 PDF p.72)
 
 이 용어집 정의만으로 제3장의 계획·자원·지원·정책 조정 기능 전체를 정보 교환에 한정하지 않는다. Cooperation·Collaboration은 NIMS 용어집의 독립 정의 항목으로 확인하지 못했으며 본문의 협조·협업 용례와 구분한다.
 
 | 기관 역할 | NIMS 용어집 설명의 학습용 번역 |
 | --- | --- |
-| 지원기관(Assisting Agency) | 사건에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71 |
-| 협조기관(Cooperating Agency) | 사건관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72 |
+| 지원기관(Assisting Agency) | 사고에 직접 책임이 있는 기관에 인력·서비스·기타 자원을 제공하는 기관 또는 조직. 인쇄 p.61 / 전체 PDF p.71 |
+| 협조기관(Cooperating Agency) | 사고관리에 직접적인 작전·지원 기능이나 자원을 제공하는 것 이외의 도움을 제공하는 기관. 인쇄 p.62 / 전체 PDF p.72 |
 
 이 기관 명칭을 협조·조정·협업의 낮고 높은 관계 단계로 해석하지 않는다. 한국어 기관명 역시 이 노트의 학습용 번역이다.
 
