@@ -1,6 +1,6 @@
 # 현장지휘체계 학습 노트
 
-[전체 목차](https://nims-chapter3-study.vercel.app/) · [제3장](https://nims-chapter3-study.vercel.app/chapters/03/) · [제4장](https://nims-chapter3-study.vercel.app/chapters/04/)
+[전체 목차](https://dadem-nims-study.vercel.app/) · [제3장](https://dadem-nims-study.vercel.app/chapters/03/) · [제4장](https://dadem-nims-study.vercel.app/chapters/04/)
 
 제1~8장을 연결할 학습 목차입니다. 현재 제3장 지휘 및 조정, 제4장 통신 및 정보관리를 제공합니다. 그 밖의 장은 자료 등록 후 제목과 내용을 연결합니다.
 
