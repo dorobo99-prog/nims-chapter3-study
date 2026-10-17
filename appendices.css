@@ -1,0 +1,17 @@
+.appendix-page .responsibility-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.appendix-page .desktop-toc a span, .appendix-page .mobile-toc a span { flex: 0 0 23px; white-space: nowrap; }
+.appendix-page .figure-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.appendix-page .figure-pair .source-figure { min-width: 0; margin-top: 18px; }
+.appendix-page .source-figure img { object-fit: contain; }
+.appendix-page .table-scroll { min-width: 0; }
+.appendix-page .study-table .cell-value { min-width: 0; overflow-wrap: anywhere; }
+.appendix-page .chapter-body .bullets { font-size: .89rem; line-height: 1.85; }
+.appendix-page .source-boundary { margin: -5px 0 32px; padding: 18px 20px; font-size: .78rem; line-height: 1.85; border-left: 3px solid var(--ink); background: var(--tint); }
+.appendix-page .source-boundary p:last-child { margin-bottom: 0; }
+.appendix-page .mini-button { min-height: 44px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); background: var(--paper); font-size: .76rem; }
+.appendix-page .site-header .header-actions { display: flex; align-items: center; gap: 12px; }
+.appendix-page .hero-subject { overflow-wrap: anywhere; }
+@media(max-width:950px) { .appendix-page .figure-pair { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+@media(max-width:800px) { .appendix-page .mobile-toc strong { min-width: 0; line-height: 1.5; font-size: .8rem; } .appendix-page .source-boundary { font-size: .86rem; padding: 15px; margin-bottom: 26px; } .appendix-page .chapter-body .bullets { font-size: .96rem; } .appendix-page .study-table { margin: 18px 0 26px; } }
+@media(max-width:420px) { .appendix-page .site-header .repository-link { display: none; } .appendix-page .mini-button { padding: 6px 9px; font-size: .68rem; } }
+@media print { .appendix-page .source-figure { break-inside: avoid; } .appendix-page .figure-pair { grid-template-columns: 1fr; } }

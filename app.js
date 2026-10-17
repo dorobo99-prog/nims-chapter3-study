@@ -1,4 +1,5 @@
 'use strict';
+document.querySelector('#print-page')?.addEventListener('click', () => window.print());
 const chapters = [...document.querySelectorAll('.chapter')];
 const chapterLinks = [...document.querySelectorAll('[data-chapter]')];
 const mobileToc = document.querySelector('.mobile-toc');
