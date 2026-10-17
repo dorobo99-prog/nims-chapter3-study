@@ -1,0 +1,691 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="NIMS 제4장 통신 및 정보관리: 원문 pp.50–59를 바탕으로 원칙, 정보 처리, 보고·계획, 표준·보안을 학습합니다."><meta name="version" content="2.0.0"><title>제4장 통신 및 정보관리 | 현장지휘체계 학습 노트</title><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="../../book.css"><script src="../../app.js" defer></script></head><body id="top"><a class="skip-link" href="#overview">본문으로 이동</a><div class="reading-progress" aria-hidden="true"><span></span></div><header class="site-header"><a class="brand" href="../../index.html"><strong>NIMS</strong><span>제4장 학습 노트</span></a><a class="repository-link" href="https://github.com/dorobo99-prog/nims-chapter3-study">자료 저장소 ↗</a></header><nav class="book-nav" aria-label="교재 전체 탐색"><a href="../../index.html">← 전체 목차</a><a href="../../chapters/03/" >제3장</a><a href="../../chapters/04/" aria-current="page">제4장</a></nav><div class="layout"><aside class="desktop-toc"><nav aria-label="제4장 학습 목차"><p class="toc-label">제4장 학습 목차</p><ol><li><a href="#overview" data-chapter="overview"><span>01</span>제4장의 전체 그림</a></li><li><a href="#principles" data-chapter="principles"><span>02</span>4대 원칙, 7개 세부 개념</a></li><li><a href="#management" data-chapter="management"><span>03</span>통신관리</a></li><li><a href="#reports" data-chapter="reports"><span>04</span>보고서와 대응계획</a></li><li><a href="#processing" data-chapter="processing"><span>05</span>정보 수집·검증·분석</a></li><li><a href="#standards" data-chapter="standards"><span>06</span>표준·기술·정보보안</a></li><li><a href="#terms" data-chapter="terms"><span>07</span>주요 용어와 약어</a></li><li><a href="#connections" data-chapter="connections"><span>08</span>개념을 연결해 읽기</a></li><li><a href="#questions" data-chapter="questions"><span>09</span>함께 생각할 질문</a></li><li><a href="#review" data-chapter="review"><span>10</span>복습과 출처</a></li></ol><p class="toc-note">영문 인쇄 pp.50–59<br>원문과 학습 해석 구별</p></nav></aside><div class="content-column"><header class="hero"><div class="hero-subject">CHAPTER IV · COMMUNICATIONS AND INFORMATION MANAGEMENT</div><h1>정보를 나누고,<br>판단을 연결하다.</h1><p>통신의 연결에서 검증·분석과 의사결정까지.<br>원문을 따라 핵심 개념과 작동 조건을 구별합니다.</p><a class="start-link" href="#overview">제4장 학습 시작 ↓</a></header><details class="mobile-toc"><summary><span>목차</span><strong id="current-chapter">제4장의 전체 그림</strong></summary><nav aria-label="제4장 모바일 목차"><ol><li><a href="#overview" data-chapter="overview"><span>01</span>제4장의 전체 그림</a></li><li><a href="#principles" data-chapter="principles"><span>02</span>4대 원칙, 7개 세부 개념</a></li><li><a href="#management" data-chapter="management"><span>03</span>통신관리</a></li><li><a href="#reports" data-chapter="reports"><span>04</span>보고서와 대응계획</a></li><li><a href="#processing" data-chapter="processing"><span>05</span>정보 수집·검증·분석</a></li><li><a href="#standards" data-chapter="standards"><span>06</span>표준·기술·정보보안</a></li><li><a href="#terms" data-chapter="terms"><span>07</span>주요 용어와 약어</a></li><li><a href="#connections" data-chapter="connections"><span>08</span>개념을 연결해 읽기</a></li><li><a href="#questions" data-chapter="questions"><span>09</span>함께 생각할 질문</a></li><li><a href="#review" data-chapter="review"><span>10</span>복습과 출처</a></li></ol></nav></details><div class="responsibility-strip" aria-label="제4장 내용 구성"><span>핵심 원칙</span><span>통신관리</span><span>정보 처리</span><span>표준·보안</span></div><main><section class="chapter" id="overview" aria-labelledby="heading-overview"><header class="chapter-header"><div class="chapter-meta"><span>학습 01</span><span>pp.50–59</span></div><h2 id="heading-overview">제4장의 전체 그림</h2><p>통신의 목표에서 정보의 활용까지</p></header><div class="chapter-body"><p>통신 및 정보관리는 대응인력이 정확하고 시의적절하며 관련성 있는 정보를 확보·제공하도록 지원합니다. 상황인식(Situational Awareness), 접근성(Accessibility), 음성·데이터 상호운용성(Interoperability)을 목표로 합니다(p.50).</p><div class="evidence-note"><strong>책임의 구별</strong><p>정보공유는 모든 대응인력의 책임입니다. 통신시스템 지원은 통상 ICS 지원부서(Logistics Section)와 EOC 지원 인력이 담당합니다.</p></div><details class="outline-detail"><summary>원문 전체 목차와 쪽수별 내용 펼치기</summary><p>교재의 원래 목차와 서술 순서를 임의로 재편하지 않고 인쇄 쪽수 순서대로 정리한 전체 구조다.</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>인쇄 쪽수 (PDF 쪽수)</th>
+<th>원문 대·중·소목차</th>
+<th>핵심 개념 및 원문 주장 요약</th>
+<th>생략되거나 압축된 설명 (심화 보완 포인트)</th>
+<th>보완 우선순위</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>50</strong> (p.2)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value"><strong>IV. Communications and Information Management</strong> (도입부)</div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• 목표: 상황인식 확립·유지, 접근성 보장, 음성·데이터 상호운용성 확보.<br>• 책임 분담: 정보공유는 <strong>모든 인원(all personnel)</strong>의 책임, 통신시스템 지원은 <strong>ICS 지원부서(Logistics Section)</strong> 및 <strong>EOC 지원/센터 지원 인력</strong> 담당.<br>• 상황인식 유지를 위해 정보의 수집(gathering)·대조정리(collating)·종합(synthesizing)·전파(disseminating)를 지속 수행.<br>• 기획 요소: 정책, 장비, 데이터 아키텍처, 시스템, 표준, 훈련.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• <code>collating</code>(대조·분류·정리)과 <code>synthesizing</code>(종합)이 후반부 데이터 처리 절차(Validation·Analysis)와 어떻게 대응하는지 설명이 압축됨.<br>• 왜 정보공유 책임과 통신시스템 관리 책임을 분리했는지 조직적 배경 생략.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>50–51</strong> (pp.2–3)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value"><strong>Key Principles</strong> (4대 핵심 원칙 묶음)<br>1. <em>Interoperability</em><br>2. <em>Reliability, Scalability, and Portability</em><br>3. <em>Resilience and Redundancy</em><br>4. <em>Security</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• <strong>(1) 상호운용성(Interoperability):</strong> 관할·조직 내외에서 음성·데이터·영상으로 실시간 소통. 계획에는 거버넌스, 표준운영절차(SOP), 기술, 훈련·연습, 평시 및 대형사고 활용 포함.<br>• <strong>(2) 신뢰성·확장성·이동성(Reliability, Scalability, Portability):</strong> 모든 사고 유형(단일 관할/기관, 단일 관할 다기관, 다관할 다기관)에 작동. 평시 사용(regular use)이 익숙함·적용성·수용성·신기술 적응성·신뢰성을 높임. 확장성(Scalability)은 대응 규모와 시스템 사용자 수 확대 능력. 이동성(Portability)은 장비 통합·이동·배치뿐 아니라 <strong>관할 간 무선 채널의 표준화된 할당(standardized assignment of radio channels)</strong>을 통해 타 관할에서도 익숙한 장비를 쓰는 것을 포함.<br>• <strong>(3) 복원력·중복성(Resilience and Redundancy):</strong> 중단 없는 정보 흐름 보장. 복원력(Resilience)은 인프라 손상·상실 후에도 견디며 계속 작동하는 능력. 중복성(Redundancy)은 서비스 복제(duplication of services)와 다양한 대체 수단을 통한 주 통신 손상 시 연속성 확보.<br>• <strong>(4) 보안(Security):</strong> 민감 정보 보호, 산업제어시스템(industrial control systems) 등 핵심 자산 접근 보안, IT·보안 전문가 협력, 정보·수사(Intelligence/investigations) 인력의 민감정보·개인식별정보(PII)·기밀정보 보호, 데이터 보호·프라이버시 법 준수.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 6개 세부 속성(상호운용성·신뢰성·확장성·이동성·복원력·중복성)과 보안을 왜 4개 묶음으로 제시했는지 설명 생략.<br>• 상호운용성 계획의 다섯 요소를 실제 운영에서 어떻게 연결하는지는 추가 학습 과제임.<br>• Portability에 무선 채널 표준 할당이 포함되는 기술적·제도적 이유 설명 필요.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">최상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>52</strong> (p.4)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value"><strong>A. Communications Management</strong><br>- <em>Standardized Communication Types</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• 4가지 표준 통신 유형:<br>  1) <strong>전략 통신(Strategic):</strong> 고위급 지침, 자원 우선순위 결정, 역할·책임 결정, 전반적 사고관리 행동방침(courses of action).<br>  2) <strong>전술 통신(Tactical):</strong> 현장 지휘부와 전술 인력, 협조 기관·조직 간 통신.<br>  3) <strong>지원 통신(Support):</strong> 전략·전술 통신을 뒷받침하는 조정(병원 간 자원 주문·출동·추적, 교통·공공사업 통신 등).<br>  4) <strong>대국민 통신(Public):</strong> 경보·경고(alerts and warnings), 기자회견.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 제3장의 ICS·EOC·MAC Group·JIS/JIC 구조와 4가지 통신 유형이 각각 어떻게 맞물리는지 명시적 연결표가 없음.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>52–53</strong> (pp.4–5)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value">- <em>Policy and Planning</em><br>- <em>Agreements</em><br>- <em>Equipment Standards</em><br>- <em>Training</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• <strong>정책·계획(Policy and Planning):</strong> 누가 어떤 시스템·플랫폼을 쓰는지, 환경별 필수 정보, 장비·시스템의 기술 변수 결정. NGO·민간·핵심인프라 소유자를 포함한 모든 이해관계자 참여. 비상운영계획(EOP)에 통합할 6가지 요소 제시(정보 수요와 출처, 파트너 정보 통합 지침·표준·도구, 경보·사고통지·대국민 통신 배포 절차·네트워크, 타 정부수준·파트너 통지 메커니즘, 지휘·조정·지원 통합 IT 프로토콜, 영어 제한자·장애인·접근 및 기능상 필요자 동시 접근 보장).<br>• <strong>협정(Agreements):</strong> EOP 상 모든 당사자 간 사전 협정 체결(네트워크 연결, 데이터 형식 표준, 사이버보안 협정 포함).<br>• <strong>장비 표준(Equipment Standards):</strong> 공통 인터페이스로 연결되며 상당수가 <strong>민간 부문(private sector)의 운영 백본(operational backbone)</strong>에 의존. 공공/민간 시스템 정기 개선·유지보수 필수. 표준 개발 시 4가지 고려사항(사용 환경 범위, 잠재 사용자 범위, 국가 공인 통신 표준[각주 19: ANSI, NFPA], 내구성 장비 필요성).<br>• <strong>훈련(Training):</strong> 사고 전 상호운용 장비의 능력과 한계 숙지.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 공공 재난통신망이 왜 민간 통신 백본에 의존하며, 그로 인한 취약성(상용망 마비·사이버 위협)을 왜 사전 협정(Agreements)과 표준으로 관리해야 하는지 맥락 보완 필요.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">중</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>54</strong> (p.6)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value"><strong>B. Incident Information</strong><br>- <em>Incident Reports</em><br>- <em>Incident Action Plans</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• 사고정보의 6가지 활용 기능(계획 지원, 대국민 비상보호조치 소통, 사고 비용 산정, NGO·민간 자원 추가 참여 필요성 판단, 안전 문제 식별, 정보 요청 해결).<br>• <strong>사고보고서(Incident Reports):</strong><br>  1) <strong>상황보고서(Situation Reports, SITREP):</strong> 정기적·반복적 발행, <strong>지난 작전기간(past operational period)</strong> 동안의 사고 상태 스냅샷, 확인·검증된(confirmed or verified) 구체적 세부사항(who, what, when, where, how) 수록.<br>  2) <strong>상태보고서(Status Reports):</strong> 즉각보고(spot reports)를 예로 포함하며, 정기 SITREP 외에 중요·시간민감 정보 전달, 기능별(function-specific)·비격식적(less formal).<br>• 보고서 표준화와 <strong>보고 기관 고유 정보 수집·전파 허용</strong>의 균형.<br>• <strong>사고대응계획(IAP):</strong> IC/UC가 수립한 목표와 <strong>계획된 작전기간(planned operational period, 통상 12~24시간)</strong>의 전술 수록(세부 과정은 Appendix A, ICS Tab 8 참조).</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• SITREP(과거 작전기간의 검증된 스냅샷)과 Status Report(비정기·시간민감·기능별), IAP(미래 12~24시간 계획된 작전기간의 목표·전술)의 시제·기능적 연결고리 설명 필요.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">최상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>54–56</strong> (pp.6–8)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value">- <em>Data Collection and Processing</em><br>  · <em>Initial Size-Up/Rapid Assessment</em><br>  · <em>Data Collection Plan</em><br>  · <em>Validation</em><br>  · <em>Analysis</em><br>  · <em>Dissemination</em><br>  · <em>Updating</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• 표준화된 표본추출(sampling)과 데이터 수집이 분석 신뢰성과 평가 품질을 높임.<br>• 6대 표준 요소:<br>  1) <strong>초기 상황판단/신속평가(Initial Size-Up/Rapid Assessment):</strong> 현장 최초 도착 책임자가 상황을 평가해 출동지령실(dispatch) 또는 지원조직에 전달 → 자원 배정·초기 의사결정에 활용.<br>  2) <strong>데이터 수집 계획(Data Collection Plan):</strong> IC, UC, 또는 EOC 책임자(EOC director)가 수립. 수집할 <strong>필수정보요소(Essential Elements of Information, EEI)</strong>와 출처·방법·측정단위·수집일정을 정리한 매트릭스(matrix). <strong>EEI는 데이터 수집 계획 수립 전에 먼저 정의</strong>해야 함(14개 전형적 EEI 항목과 8가지 데이터 수집 방법 제시).<br>  3) <strong>검증(Validation):</strong> 상황인식 담당 인력이 데이터가 불완전(incomplete)·부정확(inaccurate)·과장/윤색(embellished)·구식(outdated)·오도(misleading)되었는지 검토. 다양한 출처로 교차 검증.<br>  4) <strong>분석(Analysis):</strong> 검증된 데이터를 의사결정에 유용한 정보(information)로 전환. 정보 수요를 더 작고 관리 가능한 요소로 분해해 해결. 시의적절·객관적 분석 및 <strong>결측·미지 데이터(missing or unknown data) 인지</strong> 강조.<br>  5) <strong>전파(Dissemination):</strong> 수집·검증된 데이터를 관련 법률·정책에 맞춰 공유.<br>  6) <strong>갱신(Updating):</strong> 지속적 모니터링·검증·통합·분석을 통해 상황인식 발전.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 원문 데이터 흐름(Raw Data → Validated Data → Useful Information → Situational Awareness → Sound Decisions)의 단계별 병목과 오류 전파 메커니즘 심화 필요.<br>• 왜 EEI를 수집 계획보다 먼저 정의해야 하는지(정보 과부하 방지) 설명 보완.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">최상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>57–58</strong> (pp.9–10)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value"><strong>C. Communications Standards and Formats</strong><br>- <em>Common Terminology, Plain Language, Compatibility</em><br>  · <em>Common Terminology</em><br>  · <em>Plain Language</em><br>  · <em>Data Interoperability</em><br>- <em>[Box] United States National Grid</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• <strong>공통 용어(Common Terminology):</strong> 서로 다른 분야·관할·조직·기관 간 소통과 조정 지원.<br>• <strong>평문(Plain Language):</strong> 기관 고유 코드(codes)를 피하고 평문과 명료한 표현(clear text) 사용은 <strong>공공 안전(public safety, 특히 대응인력과 피해 주민의 안전)</strong> 문제임. 구두·서면 모든 조직 간 통신에 적용하며 기관 고유 약어·은어(acronyms or jargon) 지양.<br>• <strong>데이터 상호운용성(Data Interoperability):</strong> 호환 가능한 정보관리의 3요소:<br>  1) <em>Data Communication Protocols:</em> 음성·데이터·공간정보·인터넷·암호화 프로토콜, <strong>국가정보교환모델(NIEM, <code>http://www.niem.gov</code>)</strong> 일관 준수.<br>  2) <em>Data Collection Protocols:</em> 사고 전 다분야·다관할 표준 절차 수립(예: <strong>미국 국가격자망[USNG]</strong> 활용).<br>  3) <em>Encryption or Tactical Language:</em> 보안 유지를 위한 암호화 체계 구비. 대다수 사고에서는 평문이 적절하나, <strong>진행 중인 테러 사건(ongoing terrorist event) 등 사고 성격상 전술 언어(tactical language)와 특수 암호화가 정당화되는 예외</strong>가 있으며, 이 경우 <strong>사고별 통신계획(incident-specific communications plan)</strong>에 지침을 반영해야 함.<br>• <strong>[상자] USNG(p.58):</strong> 위도/경도(latitude/longitude) 대안으로 쓰는 점·구역 위치 참조 체계. 위험평가·계획·대응·복구 전반 및 정부·민간·자원봉사조직 공통 활용.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 소제목에는 <code>Compatibility</code>(호환성)가 있고 하위 항목 제목은 <code>Data Interoperability</code>(데이터 상호운용성)로 되어 있는 원문 구조의 관계 설명.<br>• 평문 원칙과 암호화/전술 언어 예외의 경계 조건.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">상</div></td>
+</tr>
+<tr>
+<td data-label="
+
+인쇄 쪽수 (PDF 쪽수)"><div class="cell-value"><strong>58–59</strong> (pp.10–11)</div></td>
+<td data-label="원문 대·중·소목차"><div class="cell-value">- <em>Technology Use and Procedures</em><br>  · <em>Social Media</em><br>  · <em>Using Social Media for Situational Awareness</em><br>  · <em>Using Social Media for Disseminating Information</em><br>- <em>Information Security/Operational Security</em></div></td>
+<td data-label="핵심 개념 및 원문 주장 요약"><div class="cell-value">• <strong>기술 활용과 절차:</strong> 사고 전·중·후 상황인식 제고 도구(무선·전화, 대중 경보·통지 시스템, GIS·사고관리 소프트웨어 등 하드웨어/소프트웨어/인터넷 기반 시스템, 소셜 미디어). 정보 공유 표준·절차·프로토콜 준수.<br>• <strong>소셜 미디어(Social Media):</strong> 4가지 촉진 기능(사고 영향 및 현장 목격담[firsthand accounts] 모니터링·수집, 공공정보·경보 배포, 지도·사고 시각화 제작, 가용 정보·서비스·자원과 확인된 수요 매칭).<br>  - <em>상황인식 활용:</em> 융합센터(fusion centers)·법집행·공중보건 등이 소셜 미디어 급증(spikes)이나 추세(trends)를 모니터링해 징후 조기 포착. <strong>반드시 데이터 검증(validation) 절차를 거쳐 필터링·정확성 판단</strong>.<br>  - <em>정보전파 활용:</em> 지휘관이 고려할 3가지(대상 청중과 공유할 정보 유형 식별, 피드백·응답 요청 여부 결정, <strong>생존자가 메시지를 받기까지의 잠재적 시간 지연[potential time delay]</strong> 고려) → 플랫폼·빈도·메시지 구성·인력 배치 결정. 표준 공개 프로토콜과 접근성 준수.<br>• <strong>정보보안/작전보안(Information Security/Operational Security):</strong> 기밀성(confidentiality) 요구가 정보공유를 복잡하게 만들 수 있음(특히 법집행 공동체 내부 및 비상관리·소방·공중보건 등 타 공동체와 첩보[intelligence] 공유 시). 제한·기밀정보 접근은 <strong>관련 법령(applicable law)</strong>, 개인의 <strong>보안인가 등급(security clearance)</strong>, <strong>알 필요성(need to know)</strong>에 따름.</div></td>
+<td data-label="생략되거나 압축된 설명 (심화 보완 포인트)"><div class="cell-value">• 소셜 미디어의 양방향성(수집 vs 전파)에서 발생하는 허위정보 검증 문제와 생존자 수신 지연 문제.<br>• 정보공유(Information Sharing) 원칙과 정보/작전보안(Need to know) 사이의 구조적 긴장.</div></td>
+<td data-label="보완 우선순위"><div class="cell-value">상</div></td>
+</tr>
+</tbody></table>
+<hr>
+</details></div><a class="next-chapter" href="#principles"><span>다음 학습</span><strong>4대 원칙, 7개 세부 개념</strong></a></section>
+<section class="chapter" id="principles" aria-labelledby="heading-principles"><header class="chapter-header"><div class="chapter-meta"><span>학습 02</span><span>pp.50–51</span></div><h2 id="heading-principles">4대 원칙, 7개 세부 개념</h2><p>서로 다른 운영 조건을 구별합니다.</p></header><div class="chapter-body"><h3>1. 정보공유와 통신체계의 역할 분담 (p.50)</h3>
+<ul>
+<li><strong>최상위 목적:</strong> 정확하고(accurate), 시의적절하며(timely), 관련성 있는(relevant) 정보를 확보·제공하여 <strong>상황인식(Situational Awareness)</strong>을 확립·유지하고, <strong>접근성(accessibility)</strong> 및 <strong>음성·데이터 상호운용성(voice and data interoperability)</strong>을 보장한다.</li>
+<li><strong>책임의 이중 구조:</strong><ol>
+<li><strong>정보공유(Information Sharing):</strong> 현장에 있든, EOC에 있든, 다른 지원 거점에 있든 <strong>모든 사고 대응인력(all personnel)</strong>의 책임이다.</li>
+<li><strong>정보공유를 지원하는 통신시스템(Communications Systems):</strong> 통상 <strong>ICS의 지원부서(Logistics Section)</strong> 인력과 <strong>EOC의 지원 또는 센터 지원 인력(logistics or center support staff)</strong>이 담당한다.</li>
+</ol>
+</li>
+<li><strong>지속적 정보 순환(Continual Information Flow):</strong> 대응인력은 사고 정보를 지속적으로 <strong>수집(gathering) → 대조·정리(collating) → 종합(synthesizing) → 전파(disseminating)</strong>하여 상황인식을 유지한다.</li>
+<li><strong>사전 기획 대상:</strong> 사고 관련 정책(policies), 장비(equipment), 데이터 아키텍처(data architecture), 시스템(systems), 표준(standards), 훈련(training).</li>
+</ul>
+<h3>2. 통신 및 정보관리의 4대 핵심 원칙 (pp.50–51)</h3>
+<p>원문은 사고관리자가 사고 중 끊임없는 정보 흐름(constant flow of information)을 유지하도록 돕는 핵심 원칙을 4개 범주(세부 7개 개념)로 제시한다.</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>원문 번호</th>
+<th>원칙 범주</th>
+<th>핵심 정의 및 작동 요건</th>
+<th>원문 쪽수</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(1)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>상호운용성(Interoperability)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 관할구역 및 조직 <strong>내부(within)와 상호 간(across)</strong>에 음성·데이터·영상 시스템으로 <strong>실시간(in real time)</strong> 소통할 수 있게 하는 능력.<br>• 상호운용성 계획(Interoperability plans)의 5대 구성요소: ① 거버넌스(governance), ② 표준운영절차(standard operating procedures, SOP), ③ 기술(technology), ④ 훈련 및 연습(training and exercises), ⑤ 대형 사고뿐 아니라 <strong>일상 작전(routine operations)에서의 사용(usage)</strong>.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.50</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(2)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>신뢰성(Reliability)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 모든 유형의 사고(단일 관할·단일 기관, 단일 관할·다기관, 다관할·다기관)에서 기능할 수 있어야 함.<br>• <strong>평시 정기적 사용(regular use)</strong>을 통해 사용자에게 익숙하고(familiar), 적용 가능하며(applicable), 수용 가능하고(acceptable), 신기술에 쉽게 적응하며(readily adaptable), 어떤 상황에서도 신뢰할 수 있게 보장함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.50</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(2)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>확장성(Scalability)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 다수의 관할·조직에서 온 수많은 대응·지원 인력이 참여하는 대형 사고나 복수 사고를 포함해, 어떤 상황도 지원할 수 있도록 시스템을 확장할 수 있고 <strong>시스템 상의 사용자 수(number of users)를 쉽게 늘릴 수 있음</strong>.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.50</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(2)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>이동성(Portability)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 휴대 가능한 기술·장비를 통해 통신시스템의 효과적인 통합(integration), 운송(transport), 배치(deployment)를 보장함.<br>• 단순한 물리적 휴대성을 넘어 <strong>관할구역 간 무선 채널의 표준화된 할당(standardized assignment of radio channels across jurisdictions)</strong>을 포함하며, 이를 통해 대응인력이 자기 관할 밖의 사고에 참여하더라도 <strong>익숙한 기존 장비(familiar equipment)</strong>를 그대로 사용할 수 있게 함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.51</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(3)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>복원력(Resilience)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 기반시설의 손상이나 상실(damage or loss of infrastructure) 이후에도 시스템이 <strong>견뎌내고 계속 작동하는 능력(ability of systems to withstand and continue to perform)</strong>.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.51</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(3)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>중복성(Redundancy)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• <strong>서비스의 복제(duplication of services)</strong>를 통해 달성됨.<br>• 주 통신 기능(primary communications capabilities)이 손상을 입었을 때 <strong>다양한 대체 수단(diverse alternative methods)</strong>을 통해 통신의 연속성(continuity of communication)을 가능하게 함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.51</div></td>
+</tr>
+<tr>
+<td data-label="
+
+원문 번호"><div class="cell-value"><strong>(4)</strong></div></td>
+<td data-label="원칙 범주"><div class="cell-value"><strong>보안(Security)</strong></div></td>
+<td data-label="핵심 정의 및 작동 요건"><div class="cell-value">• 사고 대응인력 간에 소통되는 민감 정보(sensitive information)와 침해 시 광범위한 영향을 초래할 수 있는 <strong>산업제어시스템(industrial control systems)</strong> 등 핵심 자산(critical assets)에 대한 접근을 보호함.<br>• IT 및 보안 전문가와 협력해 데이터·네트워크·시스템 보호 모범사례(best practices)를 통합.<br>• 정보·수사 기능(Intelligence/investigations function) 인력이 다루는 민감정보, <strong>개인식별정보(personally identifiable information, PII)</strong>, 기밀정보(classified information)를 관련 법률에 따라 보호하고 데이터 보호·프라이버시 법률을 준수함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.51</div></td>
+</tr>
+</tbody></table>
+<hr>
+</div><a class="next-chapter" href="#management"><span>다음 학습</span><strong>통신관리</strong></a></section>
+<section class="chapter" id="management" aria-labelledby="heading-management"><header class="chapter-header"><div class="chapter-meta"><span>학습 03</span><span>pp.52–53</span></div><h2 id="heading-management">통신관리</h2><p>전략·전술·지원·대국민 통신과 사전 준비</p></header><div class="chapter-body"><h3>1. 표준화된 통신 유형(Standardized Communication Types, p.52)</h3>
+<p>서로 다른 분야·관할·조직·기관의 대응인력이 효과적으로 소통하기 위해 사용하는 4가지 표준 통신 유형이다.</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>통신 유형</th>
+<th>원문 정의 및 포함 내용</th>
+<th>인쇄 쪽수</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+통신 유형"><div class="cell-value"><strong>전략 통신(Strategic)</strong></div></td>
+<td data-label="원문 정의 및 포함 내용"><div class="cell-value">고위급 지침(high-level directions): 자원 우선순위 결정(resource priority decisions), 역할과 책임 결정(roles and responsibilities determinations), 전반적인 사고관리 행동방침(overall incident management courses of action) 포함.</div></td>
+<td data-label="인쇄 쪽수"><div class="cell-value">p.52</div></td>
+</tr>
+<tr>
+<td data-label="
+
+통신 유형"><div class="cell-value"><strong>전술 통신(Tactical)</strong></div></td>
+<td data-label="원문 정의 및 포함 내용"><div class="cell-value">현장 지휘부(on-scene command)와 전술 인력(tactical personnel), 그리고 협조 기관·조직(cooperating agencies and organizations) 간의 통신.</div></td>
+<td data-label="인쇄 쪽수"><div class="cell-value">p.52</div></td>
+</tr>
+<tr>
+<td data-label="
+
+통신 유형"><div class="cell-value"><strong>지원 통신(Support)</strong></div></td>
+<td data-label="원문 정의 및 포함 내용"><div class="cell-value">전략 및 전술 통신을 뒷받침하는 조정(coordination in support of strategic and tactical communications).<br>• 원문 예시: 자원 주문·출동·추적에 관한 병원 간(among hospitals) 통신, 교통(traffic) 및 공공사업(public works) 통신.</div></td>
+<td data-label="인쇄 쪽수"><div class="cell-value">p.52</div></td>
+</tr>
+<tr>
+<td data-label="
+
+통신 유형"><div class="cell-value"><strong>대국민 통신(Public)</strong></div></td>
+<td data-label="원문 정의 및 포함 내용"><div class="cell-value">경보 및 경고(alerts and warnings), 기자회견(press conferences).</div></td>
+<td data-label="인쇄 쪽수"><div class="cell-value">p.52</div></td>
+</tr>
+</tbody></table>
+<h3>2. 정책 및 계획(Policy and Planning, pp.52–53)</h3>
+<ul>
+<li><strong>기획의 결정 사항:</strong> 사용할 통신 시스템·플랫폼, 사용 권한자(who can use them), 환경별 필수 정보, 모든 장비·시스템의 기술적 매개변수(technical parameters) 등. 기술 변화와 정보교환 방식 개선에 맞춰 계획·절차도 진화해야 한다.</li>
+<li><strong>이해관계자 참여:</strong> 비정부기구(NGO), 민간 부문(private sector), 핵심 기반시설 소유자(critical infrastructure owners)를 포함한 <strong>모든 이해관계자(all stakeholders)</strong>가 통신 계획·전략 수립에 참여해야 하며, 기술·장비 표준도 공유해 상호운용성을 높인다.</li>
+<li><strong>비상운영계획(EOP) 등에 포함해야 할 6가지 요소(pp.52–53):</strong><ol>
+<li>정보 수요(information needs)와 잠재적 정보 출처(potential sources)</li>
+<li>파트너 조직과 정보를 통합하기 위한 지침·표준·도구</li>
+<li>경보, 사고 통지(incident notifications), 대국민 통신 및 기타 핵심 정보를 배포하기 위한 절차·프로토콜·네트워크</li>
+<li>다른 정부 수준(other levels of government) 및 파트너 조직에 통지하기 위한 메커니즘과 프로토콜</li>
+<li>모든 지휘·조정·지원 기능을 통합하기 위해 정보관리 기술(컴퓨터, 네트워크, 정보공유 메커니즘 등)을 효과적·효율적으로 사용하는 프로토콜</li>
+<li>영어 능력이 제한된 사람(limited proficiency in English), 장애인(disabilities), 기타 접근 및 기능상 필요가 있는 사람(access and functional needs)을 포함해 <strong>모든 사람에게 사고 메시지가 동시에 접근 가능(simultaneously accessible)하도록 보장</strong>하는 지침과 메커니즘</li>
+</ol>
+</li>
+</ul>
+<h3>3. 협정(Agreements), 장비 표준(Equipment Standards), 훈련(Training) (p.53)</h3>
+<ul>
+<li><strong>협정(Agreements):</strong> 관할구역의 비상운영계획(EOP)에 명시된 모든 당사자는 사고 발생 시 계획·절차의 통신 요소가 즉시 효력을 발휘하도록 사전 협정을 체결해야 한다. 협정에는 합의된 통신 시스템·플랫폼, <strong>네트워크 연결(connection of networks)</strong>, <strong>데이터 형식 표준(data format standards)</strong>, <strong>사이버보안 협정(cybersecurity agreements)</strong>이 포함된다.</li>
+<li><strong>장비 표준(Equipment Standards):</strong> 사고관리 통신장비는 공통 인터페이스(common interfaces)로 연결된 구성요소·시스템으로 이루어지며, <strong>상당수가 운영 백본(operational backbone)을 민간 부문(private sector)에 의존</strong>한다. 공공/민간 통신시스템과 장비는 정기적으로 개선·갱신·유지보수해야 한다. 표준 개발 시 고려할 4가지 사항:<ol>
+<li>인력이 시스템을 사용할 <strong>환경 조건의 범위(range of conditions)</strong></li>
+<li>잠재적으로 시스템을 사용할 <strong>인력의 범위(range of personnel)</strong></li>
+<li><strong>현행 국가 공인 통신 표준(current nationally recognized communications standards)</strong> — <strong>각주 19:</strong> 미국표준협회(American National Standards Institute, ANSI)와 미국방화협회(National Fire Protection Association, NFPA) 같은 표준개발기구(Standards-developing organizations)가 통신 표준을 정기적으로 갱신·발행함.</li>
+<li><strong>내구성 있는 장비(durable equipment)</strong>의 필요성</li>
+</ol>
+</li>
+<li><strong>훈련(Training):</strong> 상호운용 가능한 시스템과 장비를 활용한 훈련·연습을 통해 사고 전에 그 능력과 한계(capabilities and limitations)를 이해하게 한다.</li>
+</ul>
+<hr>
+</div><a class="next-chapter" href="#reports"><span>다음 학습</span><strong>보고서와 대응계획</strong></a></section>
+<section class="chapter" id="reports" aria-labelledby="heading-reports"><header class="chapter-header"><div class="chapter-meta"><span>학습 04</span><span>p.54</span></div><h2 id="heading-reports">보고서와 대응계획</h2><p>확인된 과거와 계획된 작전기간을 구별합니다.</p></header><div class="chapter-body"><h3>1. 사고정보의 6가지 활용 목적 (p.54)</h3>
+<p>사고 중 ICS, EOC, MAC Group, JIS 내부의 여러 기능에서 의사결정을 위해 시의적절하고 정확한 정보를 다음 용도로 사용한다.</p>
+<ol>
+<li>계획 수립 지원(Aiding in planning)</li>
+<li>비상보호조치(emergency protective measures)를 포함한 대국민 소통(Communicating with the public)</li>
+<li>사고 비용 산정(Determining incident cost)</li>
+<li>NGO 또는 민간 부문 자원의 추가 참여 필요성 판단(Determining the need for additional involvement of NGO or private sector resources)</li>
+<li>안전 문제 식별(Identifying safety issues)</li>
+<li>정보 요청 해결(Resolving information requests)</li>
+</ol>
+<h3>2. 사고보고서(Incident Reports)와 사고대응계획(IAP) 비교 (p.54)</h3>
+<table class="study-table">
+<thead>
+<tr>
+<th>구분</th>
+<th>상황보고서(Situation Reports, SITREP)</th>
+<th>상태보고서(Status Reports)</th>
+<th>사고대응계획(Incident Action Plans, IAP)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>성격 및 발행 주기</strong></div></td>
+<td data-label="상황보고서(Situation Reports, SITREP)"><div class="cell-value">정기적·반복적(regular and recurring basis)으로 작성·배포되는 공식 사고 상세 보고서</div></td>
+<td data-label="상태보고서(Status Reports)"><div class="cell-value">정기 SITREP 일정 외에 긴급·수시로 작성되는 보고서(예: <strong>즉각보고[spot reports]</strong>). SITREP보다 비격식적(less formal)</div></td>
+<td data-label="사고대응계획(Incident Action Plans, IAP)"><div class="cell-value">IC 또는 UC가 수립한 사고 목표와 전술을 담은 대응 계획 문서</div></td>
+</tr>
+<tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>시간적 초점</strong></div></td>
+<td data-label="상황보고서(Situation Reports, SITREP)"><div class="cell-value"><strong>지난 작전기간(past operational period)</strong> 동안의 사고 상태 스냅샷(snapshot)</div></td>
+<td data-label="상태보고서(Status Reports)"><div class="cell-value">현재 발생한 중요하거나 시간에 민감한(vital and/or time-sensitive) 정보</div></td>
+<td data-label="사고대응계획(Incident Action Plans, IAP)"><div class="cell-value"><strong>계획된 작전기간(planned operational period, 통상 12~24시간)</strong> 동안의 목표와 전술</div></td>
+</tr>
+<tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>핵심 내용</strong></div></td>
+<td data-label="상황보고서(Situation Reports, SITREP)"><div class="cell-value">사고와 관련된 구체적 세부사항(<strong>who, what, when, where, and how</strong>)에 대한 <strong>확인되거나 검증된 정보(confirmed or verified information)</strong></div></td>
+<td data-label="상태보고서(Status Reports)"><div class="cell-value">통상 <strong>특정 기능 중심(function-specific)</strong>의 긴급 현황 정보</div></td>
+<td data-label="사고대응계획(Incident Action Plans, IAP)"><div class="cell-value">사고 목표(incident objectives) 및 계획된 작전기간에 수행할 전술(tactics) (상세 과정은 Appendix A, ICS Tab 8 참조)</div></td>
+</tr>
+<tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>표준화와 예외 원칙</strong></div></td>
+<td data-label="상황보고서(Situation Reports, SITREP)"><div class="cell-value">관할·조직 내외에서 사고 통지·상황·상태 보고서의 정보를 표준화하면 정보처리가 촉진되고 타 기관이 정보를 예측·신속 탐색·행동할 수 있음. <strong>단, 표준화가 보고 조직 고유의 정보(information unique to a reporting organization)를 수집·전파하는 것을 막아서는 안 됨.</strong></div></td>
+<td data-label="상태보고서(Status Reports)"><div class="cell-value">좌동</div></td>
+<td data-label="사고대응계획(Incident Action Plans, IAP)"><div class="cell-value">상황인식을 높이고 사고 목표·전술을 더 잘 이해하도록 지원</div></td>
+</tr>
+</tbody></table>
+</div><a class="next-chapter" href="#processing"><span>다음 학습</span><strong>정보 수집·검증·분석</strong></a></section>
+<section class="chapter" id="processing" aria-labelledby="heading-processing"><header class="chapter-header"><div class="chapter-meta"><span>학습 05</span><span>pp.54–56</span></div><h2 id="heading-processing">정보 수집·검증·분석</h2><p>필요한 정보를 정하고 지속적으로 갱신합니다.</p></header><div class="chapter-body"><h3>3. 데이터 수집 및 처리(Data Collection and Processing) 6대 표준 요소 (pp.54–56)</h3>
+<p>대응인력은 표준 데이터 수집 기법과 정의(standard data collection techniques and definitions)를 준수해 데이터를 수집·분석·공유해야 하며, <strong>표준화된 표본추출(standardized sampling)과 데이터 수집</strong>이 신뢰할 수 있는 분석과 평가 품질 향상을 가능하게 한다(p.54). ICS, EOC, MAC Group 리더와 공보(public affairs) 인력 모두가 의존하는 데이터 수집·처리의 6대 표준 요소는 다음과 같다(pp.55–56).</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>요소</th>
+<th>원문 명칭</th>
+<th>수행 주체 및 핵심 작동 내용</th>
+<th>원문 쪽수</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>1</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>초기 상황판단 / 신속평가</strong><br>(Initial Size-Up/Rapid Assessment)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• <strong>현장에 가장 먼저 도착한 책임자(official who is the first to arrive at the scene)</strong>가 상황을 평가함.<br>• 평가 결과를 출동지령실(dispatch) 또는 기타 사고 지원 조직에 전달 → 해당 조직 인력이 이를 활용해 <strong>자원을 배정(assign resources)</strong>하고 기타 사고 관련 의사결정을 내림.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.55</div></td>
+</tr>
+<tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>2</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>데이터 수집 계획</strong><br>(Data Collection Plan)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• <strong>IC, UC, 또는 EOC 책임자(EOC director)</strong>가 반복적인 사고정보 수집 과정을 표준화하기 위해 수립 가능.<br>• 통상 <strong>필수정보요소(Essential Elements of Information, EEI — 정보에 입각한 의사결정에 필요한 정보 항목)</strong>를 정리한 <strong>매트릭스(matrix)</strong> 형태이며, 항목별 <strong>출처(sources), 방법(methods), 측정단위(units of measure), 수집일정(schedules)</strong>을 명시함.<br>• <strong>핵심 선후관계:</strong> 데이터 수집 계획을 수립하기 <strong>전에(prior to)</strong> EEI를 먼저 정의해야 함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.55</div></td>
+</tr>
+<tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>3</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>검증</strong><br>(Validation)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• <strong>상황인식 담당 인력(staff responsible for situational awareness)</strong>이 데이터를 검토함.<br>• 데이터가 <strong>불완전(incomplete), 부정확(inaccurate), 과장/윤색(embellished), 구식(outdated), 또는 오도(misleading)</strong>되었는지 판단.<br>• 데이터를 검증하기 위해 <strong>다양한 출처(a variety of sources)</strong>를 사용해야 함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.56</div></td>
+</tr>
+<tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>4</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>분석</strong><br>(Analysis)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• 상황인식 담당 인력이 <strong>검증된 데이터(validated data)</strong>를 분석해 사고관리상의 함의(implications)를 파악하고, <strong>원시 데이터(raw data)를 의사결정에 유용한 정보(information that is useful for decision making)로 전환</strong>함.<br>• 사고의 정보 수요를 <strong>더 작고 관리 가능한 요소(smaller, more manageable elements)</strong>로 분해하여 해결함.<br>• 문제와 상황에 대한 철저한 이해에 기반해 시의적절하고 객관적인 분석을 제공하며, <strong>결측되거나 알려지지 않은 데이터(missing or unknown data)를 인지(cognizant)</strong>해야 함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.56</div></td>
+</tr>
+<tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>5</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>전파</strong><br>(Dissemination)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• 데이터를 수집·검증한 후, <strong>관련 데이터 전파 법률 및 정책(applicable data dissemination laws and policies)</strong>에 부합하게 타인과 공유함.<br>• 목표: 시의적절하고 정확한 전파를 통해 <strong>상황인식을 높이고 효과적인 조정을 촉진</strong>함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.56</div></td>
+</tr>
+<tr>
+<td data-label="
+
+요소"><div class="cell-value"><strong>6</strong></div></td>
+<td data-label="원문 명칭"><div class="cell-value"><strong>갱신</strong><br>(Updating)</div></td>
+<td data-label="수행 주체 및 핵심 작동 내용"><div class="cell-value">• 데이터와 정보의 관련 요소를 지속적으로 <strong>모니터링(monitoring), 검증(verifying), 통합(integrating), 분석(analyzing)</strong>하여 상황인식을 발전시키고 건전한 의사결정(sound decisions)을 지원함.</div></td>
+<td data-label="원문 쪽수"><div class="cell-value">p.56</div></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>표준 요소와 고정 절차의 구별</strong>
+원문 p.55는 여섯 가지를 표준 요소(standard elements)로 열거한다. 표의 번호는 설명을 위한 순번이며, 모든 사고에서 각 요소를 한 번씩만 순서대로 완료하라는 명시적 규정이 아니다. 특히 갱신(Updating)은 지속적인 모니터링·검증·통합·분석을 포함한다(p.56).</p>
+</blockquote>
+<h4>필수정보요소(EEI)의 전형적 예시 14항목과 데이터 수집 방법 8가지 (pp.55–56)</h4>
+<p>원문 p.55의 EEI 목록은 전형적 예시(typically includes items such as)다. 모든 사고에서 14항목을 전부 수집하라는 의무 목록도, 이 항목들로만 제한한 완결 목록도 아니다. p.56의 수집 방법 8가지 역시 다양한 방법의 예시다. 계획 수립 권한은 IC·UC·EOC 책임자가 수립할 수 있다(may establish)는 표현이며, EEI를 정한 뒤 계획을 만든다는 선후관계와 구별한다.</p>
+<table class="study-table">
+<thead>
+<tr>
+<th>구분</th>
+<th>원문 목록 (전수 추출)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>EEI 전형적 예시 14항목</strong><br>(p.55)</div></td>
+<td data-label="원문 목록 (전수 추출)"><div class="cell-value">1. 사고 구역 경계 및 진입 지점(Incident area boundaries/access points)<br>2. 관할구역 경계(Jurisdictional boundaries)<br>3. 사회적·경제적·정치적 영향(Social/economic/political impacts)<br>4. 주민 건강에 미치는 영향(Impact to health of the population)<br>5. 교통 시스템 상태(Transportation system status)<br>6. 통신 시스템 상태(Communications system status)<br>7. 위험요인별 특화 정보(Hazard-specific information)<br>8. 주요 기상(Significant weather)<br>9. 지진 또는 기타 지구물리 데이터(Seismic or other geophysical data)<br>10. 핵심 시설 상태(Critical facility status)<br>11. 항공 정찰 활동 상태(Aerial reconnaissance activity status)<br>12. 재난/비상 선포 상태(Disaster/emergency declaration status)<br>13. 계획되었거나 예정된 활동(Planned or upcoming activities)<br>14. 기부·기증(Donations; 물품으로만 한정하지 않음)</div></td>
+</tr>
+<tr>
+<td data-label="
+
+구분"><div class="cell-value"><strong>데이터 수집 방법 8가지</strong><br>(p.56)</div></td>
+<td data-label="원문 목록 (전수 추출)"><div class="cell-value">1. 공공안전 통신요원(public safety telecommunicators)이 받은 <strong>911 신고</strong> 또는 출동지령 시스템(dispatch systems)에서 데이터 확보<br>2. 대응인력 간 <strong>무선·영상·데이터 통신 모니터링</strong><br>3. <strong>상황보고서(SITREPs)</strong> 열람<br>4. 미국 기상청(National Weather Service) 대표 등 <strong>기술전문가(technical specialists)</strong> 활용<br>5. 현장 관찰자(field observers), ICP, Area Command, MAC Group, DOC, 타 EOC로부터 <strong>보고 수신</strong><br>6. EOC, 기타 시설, 현장 작전사무소(operational field offices)에 <strong>정보전문가(information specialists) 배치</strong><br>7. 관련 <strong>공간정보 산출물(geospatial products)</strong> 분석<br>8. 인쇄물, 온라인, 방송, <strong>소셜 미디어(social media)</strong> 모니터링</div></td>
+</tr>
+</tbody></table>
+<hr>
+</div><a class="next-chapter" href="#standards"><span>다음 학습</span><strong>표준·기술·정보보안</strong></a></section>
+<section class="chapter" id="standards" aria-labelledby="heading-standards"><header class="chapter-header"><div class="chapter-meta"><span>학습 06</span><span>pp.57–59</span></div><h2 id="heading-standards">표준·기술·정보보안</h2><p>이해 가능한 표현과 필요한 보호를 함께 설계합니다.</p></header><div class="chapter-body"><h3>1. 공통 용어, 평문, 데이터 상호운용성 (pp.57–58)</h3>
+<ul>
+<li><strong>공통 용어(Common Terminology, p.57):</strong> 서로 다른 분야·관할·조직·기관의 대응인력이 소통하고 활동을 효과적으로 조정하도록 돕는다.</li>
+<li><strong>평문(Plain Language, p.57):</strong><ul>
+<li>사고관리에서 기관 고유 코드(codes)를 피하고 <strong>평문(plain language)과 명료한 표현(clear text)</strong>을 사용하는 것은 <strong>공공 안전(public safety)</strong>, 특히 사고 대응인력과 사고 피해 주민의 안전 문제다.</li>
+<li>사고 중 조직 요소 간 <strong>모든 구두 및 서면(oral or written) 통신</strong>에 평문을 사용해야 하며, 다관할·다조직 참여 사고에서는 특정 기관·조직·관할 고유의 <strong>약어나 은어(acronyms or jargon)</strong> 사용을 피해야 한다.</li>
+</ul>
+</li>
+<li><strong>데이터 상호운용성(Data Interoperability, p.57):</strong> 관리·지휘·지원 요소 및 협조 관할·조직 간 정보 전파를 가능하게 하는 호환 가능한 정보관리(compatible information management)의 3가지 요소:<ol>
+<li><strong>데이터 통신 프로토콜(Data Communication Protocols):</strong> 음성, 데이터, 공간정보, 인터넷 사용, 데이터 암호화를 포함한 통신 절차·프로토콜. <strong>국가정보교환모델(National Information Exchange Model, NIEM, <code>http://www.niem.gov</code>)</strong>과 일관되게 정보를 구조화·공유하는 것을 포함한다.</li>
+<li><strong>데이터 수집 프로토콜(Data Collection Protocols):</strong> 사고 전에 <strong>미국 국가격자망(United States National Grid, USNG)</strong> 사용 같은 다분야·다관할 절차·프로토콜을 수립해 표준화된 데이터 수집·분석을 가능하게 한다.</li>
+<li><strong>암호화 또는 전술 언어(Encryption or Tactical Language):</strong> 보안 유지를 위해 필요 시 정보를 암호화하는 방법론과 시스템을 갖춰야 한다. <strong>대부분의 사고에서는 평문이 적절하지만, 진행 중인 테러 사건(ongoing terrorist event) 등 사고의 성격에 따라 전술 언어(tactical language)가 정당화되는 경우가 간혹 있다.</strong> 이러한 경우 특수 암호화와 전술 언어의 적절한 사용 지침을 <strong>사고별 통신계획(incident-specific communications plan)</strong>에 포함해야 한다.</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><strong>평문과 암호화는 다른 문제</strong>
+이 노트에서 평문(Plain Language)은 상대방이 이해할 수 있는 알기 쉬운 표현을 뜻한다. 이를 비암호화 전송으로 풀이하거나, 모든 암호화(Encryption)를 금지한다고 읽으면 안 된다. 원문 p.57은 필요한 정보의 암호화와, 사고 성격상 정당화되는 전술 언어(Tactical Language)의 사용을 구별해 기술한다. 진행 중인 테러 사건은 후자의 예시이며 자동 허용 조건이 아니다.</p>
+</blockquote>
+<h3>원문 시각 요소 — 미국 국가격자망(United States National Grid)</h3>
+<figure class="source-figure"><a class="figure-open" href="images/usng-callout-p58.png"><img src="images/usng-callout-p58.png" alt="United States National Grid 원문 설명 상자, 인쇄 58쪽" loading="lazy" width="1640" height="410"><span class="figure-hint">클릭하여 원문 이미지 확대 ↗</span></a><figcaption><strong>미국 국가격자망(United States National Grid)</strong><span>FEMA NIMS(2017), 인쇄 p.58 / 발췌 PDF p.10. 원문 설명 상자를 240dpi로 추출했으며 문구와 배치를 유지했습니다.</span></figcaption><p class="figure-reading"><span>읽는 방법</span>점과 구역의 위치를 일관되게 참조하는 체계를 설명합니다. 실제 좌표를 표시한 지도는 아닙니다.</p></figure>
+
+<ul>
+<li><strong>USNG 핵심 내용(p.58):</strong> FEMA와 기타 사고관리 조직이 <strong>위도/경도(latitude/longitude)의 대안</strong>으로 사용하는 <strong>점 및 구역 위치 참조 시스템(point and area location reference system)</strong>이다. 위험평가, 계획, 대응, 복구 작전을 지원하는 데 간단히 적용할 수 있으며, 개인·공공기관·자원봉사조직·민간기업이 다양한 지리적 구역과 분야를 가로질러 사용할 수 있다. 개인이나 프로그램의 역할에 관계없이 모든 정부 수준·분야·위협·위험에 걸쳐 일관된 상황인식을 촉진한다.</li>
+</ul>
+<h3>2. 기술 활용과 절차 및 소셜 미디어(Technology Use and Procedures &amp; Social Media, pp.58–59)</h3>
+<ul>
+<li><strong>기술 도구 예시 4가지(p.58):</strong> ① 무선 및 전화 시스템, ② 대중 경보·통지 시스템, ③ 하드웨어·소프트웨어·인터넷 기반 시스템 및 애플리케이션(<strong>지리/공간정보시스템[GIS]</strong> 및 사고관리 소프트웨어 포함), ④ 소셜 미디어(Social media).</li>
+<li><strong>소셜 미디어의 4가지 촉진 기능(p.58):</strong><ol>
+<li>사고 영향에 관한 정보와 <strong>현장 목격담(firsthand accounts)</strong> 모니터링 및 수집</li>
+<li>공공정보 및 경보 배포</li>
+<li>지도 및 사고 시각화(incident visualizations) 제작</li>
+<li>가용 정보·서비스·자원을 확인된 수요(identified needs)와 매칭</li>
+</ol>
+</li>
+<li><strong>상황인식을 위한 소셜 미디어 활용(p.58):</strong> 융합센터(fusion centers), 법집행, 공중보건 또는 기타 정보 모니터링 시스템이 소셜 미디어의 <strong>급증(spikes)이나 추세(trends)</strong>를 모니터링하여 상황인식을 높이거나 신종 이슈의 조기 징후(early indication of emerging issues)를 포착할 수 있다. <strong>다른 모든 데이터와 마찬가지로 데이터 검증(data validation) 절차를 사용해 소셜 미디어 정보의 정확성을 필터링하고 판단해야 한다.</strong></li>
+<li><strong>정보 전파를 위한 소셜 미디어 활용(p.59):</strong> 사고관리자가 고려해야 할 3가지 핵심 사항:<ol>
+<li><strong>의도한 대상 청중(intended audiences)</strong>과 공유할 정보 유형 식별</li>
+<li><strong>피드백이나 응답을 요청할지 여부(whether they wish to solicit feedback or responses)</strong> 결정</li>
+<li><strong>생존자가 메시지를 수신하기까지의 잠재적 시간 지연(potential time delay before survivors receive the message)</strong></li>
+</ol>
+<ul>
+<li>이 결정들을 바탕으로 사용할 플랫폼, 메시지 빈도와 구성(frequency and configuration), 임무 배정 및 인력 수요(assignments and staffing needs)를 결정하며, 표준 공개 프로토콜과 접근성을 준수해야 한다.</li>
+</ul>
+</li>
+</ul>
+<h3>3. 정보보안 및 작전보안(Information Security/Operational Security, p.59)</h3>
+<ul>
+<li><strong>기밀성과 정보공유의 긴장:</strong> 기밀성(confidentiality)에 대한 요구는 때때로 정보공유를 복잡하게 만든다. 특히 법집행 공동체(law enforcement community) 내부에서, 그리고 법집행 공동체가 비상관리·소방·공중보건 및 기타 공동체와 <strong>첩보(intelligence)</strong>를 공유할 때 두드러진다.</li>
+<li><strong>접근 통제의 3대 기준:</strong> 특정 제한정보(restricted information) 또는 기밀정보(classified information)에 대한 접근은 다음 세 가지에 달려 있다.<ol>
+<li><strong>관련 법률(applicable law)</strong></li>
+<li>개인의 <strong>보안인가 등급(security clearance)</strong></li>
+<li><strong>알 필요성(need to know)</strong></li>
+</ol>
+</li>
+</ul>
+<hr>
+<p class="evidence-note">암호화와 전술 언어는 서로 다른 수단입니다. 원문이 두 수단을 항상 함께 사용하도록 규정하는 것은 아닙니다.</p></div><a class="next-chapter" href="#terms"><span>다음 학습</span><strong>주요 용어와 약어</strong></a></section>
+<section class="chapter" id="terms" aria-labelledby="heading-terms"><header class="chapter-header"><div class="chapter-meta"><span>학습 07</span><span>pp.50–59</span></div><h2 id="heading-terms">주요 용어와 약어</h2><p>원문 표기와 학습용 약어를 구별합니다.</p></header><div class="chapter-body"><table class="study-table">
+<thead>
+<tr>
+<th>약어</th>
+<th>영문 원어</th>
+<th>한국어 명칭</th>
+<th>등장 쪽수</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>NIMS</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">National Incident Management System</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">국가재난관리시스템(국가사고관리체계)</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">표지, 각 쪽 상단</div></td>
+<td data-label="비고"><div class="cell-value">제3판(2017년 10월)</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>ICS</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Incident Command System</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">사고지휘체계</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.50, 54, 55</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장(제3장에서 정의)</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>EOC</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Emergency Operations Center</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">비상운영센터</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.50, 51, 54, 55, 56</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>SOP</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Standard Operating Procedures</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">표준운영절차</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.50</div></td>
+<td data-label="비고"><div class="cell-value">상호운용성 계획의 구성요소</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>IT</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Information Technology</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">정보기술</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.51</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>NGO</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Nongovernmental Organization</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">비정부기구</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.52, 54</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>ANSI</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">American National Standards Institute</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">미국표준협회</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.53 (각주 19)</div></td>
+<td data-label="비고"><div class="cell-value">표준개발기구(SDO) 예시</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>NFPA</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">National Fire Protection Association</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">미국방화협회</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.53 (각주 19)</div></td>
+<td data-label="비고"><div class="cell-value">표준개발기구(SDO) 예시</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>MAC Group</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Multiagency Coordination Group</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">다기관조정그룹</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.54, 55, 56</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>JIS</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Joint Information System</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">합동정보시스템</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.54</div></td>
+<td data-label="비고"><div class="cell-value">원문 본문에는 약어로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>SITREP</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Situation Report</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">상황보고서</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.54, 56</div></td>
+<td data-label="비고"><div class="cell-value">정기·반복 발행, 지난 작전기간의 검증된 스냅샷</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>IAP</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Incident Action Plan</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">사고대응계획</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.54</div></td>
+<td data-label="비고"><div class="cell-value">계획된 작전기간(12~24시간)의 목표·전술</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>EEI</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Essential Elements of Information</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">필수정보요소</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.55</div></td>
+<td data-label="비고"><div class="cell-value">정보에 입각한 의사결정에 필요한 핵심 정보 항목</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>ICP</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Incident Command Post</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">현장지휘소</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.56</div></td>
+<td data-label="비고"><div class="cell-value">데이터 수집 보고 출처 중 하나로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>DOC</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Departmental Operations Center</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">부서운영센터</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.56</div></td>
+<td data-label="비고"><div class="cell-value">데이터 수집 보고 출처 중 하나로 등장</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>NIEM</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">National Information Exchange Model</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">국가정보교환모델</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.57</div></td>
+<td data-label="비고"><div class="cell-value"><code>http://www.niem.gov</code></div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>USNG</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">United States National Grid</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">미국 국가격자망</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.57, 58</div></td>
+<td data-label="비고"><div class="cell-value">원문은 약어 없이 풀네임 또는 National Grid로 표기</div></td>
+</tr>
+<tr>
+<td data-label="
+
+약어"><div class="cell-value"><strong>GIS</strong></div></td>
+<td data-label="영문 원어"><div class="cell-value">Geographic/Geospatial Information Systems</div></td>
+<td data-label="한국어 명칭"><div class="cell-value">지리/공간정보시스템</div></td>
+<td data-label="등장 쪽수"><div class="cell-value">p.58</div></td>
+<td data-label="비고"><div class="cell-value">원문에서 두 원어를 병기함</div></td>
+</tr>
+</tbody></table>
+<p><em>(참고: 개인식별정보 <code>personally identifiable information</code>[p.51], 비상운영계획 <code>emergency operations plan</code>[pp.52–53]은 원문 본문에서 영문 소문자 풀네임으로만 등장하며 <code>PII</code>, <code>EOP</code> 약어 표기는 원문에 직접 등장하지 않는다.)</em></p>
+<hr>
+</div><a class="next-chapter" href="#connections"><span>다음 학습</span><strong>개념을 연결해 읽기</strong></a></section>
+<section class="chapter" id="connections" aria-labelledby="heading-connections"><header class="chapter-header"><div class="chapter-meta"><span>학습 08</span><span>원문 + 학습 해석</span></div><h2 id="heading-connections">개념을 연결해 읽기</h2><p>각 절의 논리가 대응 판단으로 이어지는 과정을 읽습니다.</p></header><div class="chapter-body"><blockquote>
+<p><strong>판독 근거와 학습용 해석</strong>
+사용자 재업로드 PDF 11쪽을 직접 읽고 페이지 이미지까지 대조했다. 아래 <code>[A]</code>는 원문 주장, <code>[D]</code>는 학습을 위한 연결·추론이다. 본문 쪽수는 인쇄 pp.50–59이며 PDF pp.2–11에 대응한다. 이 장의 내용을 한국 현행 제도나 실제 재난 사례의 사실로 바로 옮기지 않는다.</p>
+</blockquote>
+<h3>1. 연결의 목표를 먼저 정한다 — p.50</h3>
+<p><code>[A]</code> 장의 목표는 정확하고 시의적절하며 관련성 있는 정보를 확보·제공하고, 상황인식(Situational Awareness), 접근성(Accessibility), 음성·데이터 상호운용성(Interoperability)을 보장하는 것이다. 정보공유는 모든 인원의 책임이고, 이를 지원하는 통신시스템은 통상 ICS 지원부서와 EOC 지원 인력이 담당한다.</p>
+<p><code>[D]</code> 따라서 장비가 연결되었는지만으로 정보관리의 성과를 평가하기 어렵다. 필요한 사람이 필요한 내용을 제때 받아 이해하고 판단에 쓸 수 있는지를 함께 물어야 한다. ‘정보공유 책임’과 ‘시스템 지원 책임’의 구별은 이 질문을 조직별 업무로 옮기는 출발점이다.</p>
+<h3>2. 상호운용성을 실제 운영 조건으로 풀어낸다 — pp.50–53</h3>
+<p><code>[A]</code> 상호운용성 계획은 거버넌스(Governance), 표준운영절차(SOP), 기술(Technology), 훈련·연습(Training and Exercises), 평시 및 대형사고 활용(Usage)을 다룬다. 평시 반복 사용은 시스템의 익숙함·적용성·수용성·적응성과 신뢰성을 뒷받침한다. 이동성(Portability)에는 관할 간 무선 채널의 표준화된 할당이 포함된다.</p>
+<p><code>[D]</code> 이를 읽는 순서는 ‘장비가 호환되는가 → 누가 어느 방식으로 쓰기로 합의했는가 → 실제로 훈련하고 평소에 사용하는가’로 잡을 수 있다. 이는 교육용 질문 배열이며 원문이 정한 별도 절차가 아니다. 복원력(Resilience)은 기반시설 손상 뒤에도 기능을 이어가는 능력, 중복성(Redundancy)은 서비스 복제와 다양한 대체 수단이라는 차이를 유지한다.</p>
+<h3>3. 보고와 계획의 시간을 구별한다 — p.54</h3>
+<table class="study-table">
+<thead>
+<tr>
+<th>문서</th>
+<th>원문이 강조하는 시점·기능 <code>[A]</code></th>
+<th>학습 질문 <code>[D]</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="
+
+문서"><div class="cell-value">상황보고서(SITREP)</div></td>
+<td data-label="원문이 강조하는 시점·기능 [A]"><div class="cell-value">지난 작전기간의 상태를 정기적으로 제공하며 확인·검증된 세부정보 수록</div></td>
+<td data-label="학습 질문 [D]"><div class="cell-value">무엇이 확인되었는가?</div></td>
+</tr>
+<tr>
+<td data-label="
+
+문서"><div class="cell-value">상태보고서(Status Report)</div></td>
+<td data-label="원문이 강조하는 시점·기능 [A]"><div class="cell-value">정기 보고 일정 밖의 중요·시간민감 정보, 통상 기능별이며 비교적 비격식적; 즉각보고(Spot Report)는 예시</div></td>
+<td data-label="학습 질문 [D]"><div class="cell-value">정기 보고까지 기다릴 수 없는 변화는 무엇인가?</div></td>
+</tr>
+<tr>
+<td data-label="
+
+문서"><div class="cell-value">사고대응계획(IAP)</div></td>
+<td data-label="원문이 강조하는 시점·기능 [A]"><div class="cell-value">IC·UC가 설정한 목표와 계획된 작전기간의 전술; 기간은 통상 12~24시간</div></td>
+<td data-label="학습 질문 [D]"><div class="cell-value">다음 작전기간에 무엇을 달성하고 어떻게 행동할 것인가?</div></td>
+</tr>
+</tbody></table>
+<p><code>[D]</code> 이 구별은 현황 수집을 행동계획으로 바꾸는 데 유용하다. IAP의 시간은 모든 사고에 고정된 규정이 아니며, 상황인식 자체의 고정 예측 범위를 뜻하지 않는다.</p>
+<h3>4. 필요한 정보를 먼저 정하고 반복 수집을 설계한다 — pp.55–56</h3>
+<p><code>[A]</code> IC·UC·EOC 책임자는 반복적인 정보 수집을 표준화하는 계획을 수립할 수 있다(may establish). 계획에 앞서 필수정보요소(EEI)를 정의하고, 항목별 출처·방법·측정단위·일정을 정리한다. 본문의 14항목과 8가지 수집 방법은 예시다.</p>
+<p><code>[D]</code> 수집계획을 ‘의사결정에 필요한 질문을 먼저 정하고, 그 질문에 답할 관측 방법을 배정하는 설계’로 이해할 수 있다. 예를 들어 가상 화재에서 ‘안전한 진입로는 어디인가’를 EEI로 정했다면 위치·통제 여부·확인 시점 등을 어떤 단위와 주기로 수집할지 연결할 수 있다. 이는 원문에 없는 교육용 예시이며 고정된 보고양식을 뜻하지 않는다.</p>
+<h3>5. 검증과 분석을 구별하고 다시 갱신한다 — pp.55–56</h3>
+<p><code>[A]</code> 검증(Validation)은 데이터의 불완전·부정확·과장·노후화·오도 가능성을 다양한 출처로 점검한다. 분석(Analysis)은 검증된 데이터가 사고관리에 갖는 함의를 파악하고, 의사결정에 유용한 정보로 전환하며 결측·미지 데이터를 인지한다. 갱신(Updating)은 관련 정보를 계속 모니터링·검증·통합·분석하는 활동이다.</p>
+<p><code>[D]</code> ‘맞는 자료인가’와 ‘그 자료가 어떤 결정을 요구하는가’는 다른 질문이다. 또한 모른다는 상태를 0이나 안전으로 바꿔 적지 않아야 한다는 학습 원칙을 도출할 수 있다. 원문은 결측정보 표기용 고정 양식을 제시하지 않는다.</p>
+<blockquote>
+<p><strong>여섯 요소를 읽는 방법</strong>
+초기 상황판단/신속평가, 데이터 수집 계획, 검증, 분석, 전파, 갱신은 원문이 열거한 6개 표준 요소다. 이 노트의 화살표와 8단계 작동 모형은 이해를 돕는 해석이며, 원문이 모든 사고에서 한 번만 실행하도록 정한 고정 직선 절차가 아니다.</p>
+</blockquote>
+<h3>6. 이해 가능한 표현과 보안 조건을 함께 설계한다 — pp.57–59</h3>
+<p><code>[A]</code> 평문(Plain Language)은 기관 고유 코드·약어·은어를 피하고 상대방이 이해할 수 있게 말하고 쓰라는 원칙이다. 보안 유지에 필요한 경우의 암호화(Encryption)는 별도로 다루며, 사고 성격상 전술 언어(Tactical Language)가 정당화되는 경우의 예로 진행 중인 테러 사건을 든다. 해당 사용 지침은 사고별 통신계획에 포함한다. 제한·기밀정보 접근에는 관련 법률, 보안인가, 알 필요성(Need to Know)이 적용된다.</p>
+<p><code>[D]</code> 학습할 때 ‘어떤 말로 전달할지’, ‘전송·접근을 어떻게 보호할지’, ‘누가 받아야 하는지’를 나눠 질문하면 혼동을 줄일 수 있다. 평문을 비암호화 전송과 동일시하거나 테러라는 이유만으로 모든 특수 교신이 자동 허용된다고 설명하면 원문 조건을 놓친다.</p>
+<h3>원문 그림·표와 추가 확인 범위</h3>
+<p><code>[A]</code> 본문 인쇄 pp.50–59에는 번호가 붙은 Figure·Table이 없다. p.58의 미국 국가격자망(United States National Grid) 상자는 위치 참조체계의 설명이며 좌표 지도나 실제 작전도가 아니다. 원문 이미지와 표지 이미지는 기존 자산을 유지한다. p.53 각주 19는 ANSI·NFPA를 표준개발기구의 예로 든다.</p>
+<p><code>[E: 미확인]</code> 이 발췌본은 NIEM 데이터 스키마, USNG 좌표 읽기 실습, ICS 205·209 양식, Planning P 도해를 실제로 수록하지 않는다. 해당 원본을 확보하기 전에는 이 장의 원문 도해·양식으로 대신 제시하지 않는다.</p>
+<hr>
+</div><a class="next-chapter" href="#questions"><span>다음 학습</span><strong>함께 생각할 질문</strong></a></section>
+<section class="chapter" id="questions" aria-labelledby="heading-questions"><header class="chapter-header"><div class="chapter-meta"><span>학습 09</span><span>학습용 해석·가정</span></div><h2 id="heading-questions">함께 생각할 질문</h2><p>정답을 보기 전에 자신의 판단 근거를 설명해 보세요.</p></header><div class="chapter-body"><p>아래 질문은 원문을 바탕으로 만든 토론 과제입니다. 가상 상황은 실제 사고 조사 결과와 구별합니다.</p><details class="quiz-item"><summary><span class="question-number">1</span>무전기가 연결되는데 왜 판단은 달라질까?</summary><div class="quiz-answer"><p>상호운용성 계획의 거버넌스·SOP·기술·훈련·평시 사용을 하나씩 점검해 볼 수 있다. 표현과 위치 표준이 다르거나 정보의 시점이 어긋난 가상 상황을 가정해 보자. 이는 pp.50–53, 57을 연결한 학습용 해석이다.</p></div></details><details class="quiz-item"><summary><span class="question-number">2</span>보고서 숫자가 맞으면 분석도 끝난 것일까?</summary><div class="quiz-answer"><p>검증은 데이터의 문제를 확인하는 활동이고, 분석은 그 데이터가 의사결정에 갖는 함의를 파악하는 활동이다. 무엇이 아직 알려지지 않았는지도 함께 질문한다(pp.55–56).</p></div></details><details class="quiz-item"><summary><span class="question-number">3</span>SITREP을 IAP 대신 사용할 수 있을까?</summary><div class="quiz-answer"><p>지난 작전기간의 확인된 상태와 다음 작전기간의 목표·전술은 다른 역할을 한다. 같은 문서를 보더라도 어느 시점의 어떤 결정을 위한 정보인지 구별해 보자(p.54).</p></div></details><details class="quiz-item"><summary><span class="question-number">4</span>예비 장비가 있으면 복원력도 충분할까?</summary><div class="quiz-answer"><p>중복성은 서비스 복제와 다양한 대체 수단을 다룬다. 주 장비와 예비 장비가 같은 기반시설에 의존하는 가상 상황에서는 어떤 취약성이 생길지 토론할 수 있다. 후자는 p.51을 바탕으로 한 학습용 가정이다.</p></div></details><details class="quiz-item"><summary><span class="question-number">5</span>평문을 쓰면서 정보를 보호할 수 있을까?</summary><div class="quiz-answer"><p>상대방이 알아들을 표현을 쓰는 문제, 전송을 보호하는 문제, 정보에 접근할 사람을 정하는 문제를 나눠 살펴본다. 원문은 평문 원칙과 필요한 경우의 암호화를 별도로 설명한다(pp.57–59).</p></div></details><details class="quiz-item"><summary><span class="question-number">6</span>원문의 EEI 14항목을 모두 수집해야 할까?</summary><div class="quiz-answer"><p>원문은 전형적 예시를 제시한다. 가상의 사고에서 어떤 결정을 내려야 하는지 먼저 정하고, 그 결정에 필요한 항목과 출처·방법·단위·주기를 연결해 보자(p.55).</p></div></details></div><a class="next-chapter" href="#review"><span>다음 학습</span><strong>복습과 출처</strong></a></section>
+<section class="chapter" id="review" aria-labelledby="heading-review"><header class="chapter-header"><div class="chapter-meta"><span>학습 10</span><span>10문항</span></div><h2 id="heading-review">복습과 출처</h2><p>답을 먼저 떠올린 뒤 펼쳐 확인하세요.</p></header><div class="chapter-body"><details class="quiz-item"><summary><span class="question-number">01</span>통신 및 정보관리의 3대 핵심 목표는 무엇인가?</summary><div class="quiz-answer"><p><strong>상황인식(Situational Awareness) 확립·유지</strong>, <strong>접근성(accessibility) 보장</strong>, <strong>음성 및 데이터 상호운용성(voice and data interoperability) 확보</strong>다.</p>
+<p class="source-location">원문 p.50</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">02</span>정보공유의 책임과 통신시스템 지원의 책임은 어떻게 나뉘는가?</summary><div class="quiz-answer"><p>정보공유는 <strong>모든 대응인력(all personnel)</strong>의 책임이고, 이를 지원하는 통신시스템은 통상 <strong>ICS 지원부서(Logistics Section)</strong>와 <strong>EOC 지원/센터 지원 인력</strong>이 담당한다.</p>
+<p class="source-location">원문 p.50</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">03</span>상호운용성 계획(Interoperability plans)이 다루어야 할 5가지 요소는 무엇인가?</summary><div class="quiz-answer"><p><strong>거버넌스(governance), 표준운영절차(SOP), 기술(technology), 훈련 및 연습(training and exercises), 일상 작전 및 대형 사고에서의 사용(usage)</strong>이다.</p>
+<p class="source-location">원문 p.50</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">04</span>이동성(Portability)이 단순 장비 휴대성을 넘어 포함하는 핵심 제도적 요소는?</summary><div class="quiz-answer"><p><strong>관할구역 간 무선 채널의 표준화된 할당(standardized assignment of radio channels across jurisdictions)</strong>으로, 타 관할에서도 익숙한 기존 장비를 그대로 쓰게 한다.</p>
+<p class="source-location">원문 p.51</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">05</span>복원력(Resilience)과 중복성(Redundancy)은 어떻게 다른가?</summary><div class="quiz-answer"><p><strong>복원력</strong>은 인프라 손상·상실 후에도 견디며 계속 작동하는 능력이고, <strong>중복성</strong>은 서비스 복제와 다양한 대체 수단을 통해 주 통신 손상 시 연속성을 확보하는 것이다.</p>
+<p class="source-location">원문 p.51</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">06</span>4가지 표준 통신 유형은 무엇이며 병원 간 자원 주문·배차·추적 통신은 어디에 속하는가?</summary><div class="quiz-answer"><p><strong>전략(Strategic), 전술(Tactical), 지원(Support), 대국민(Public)</strong> 통신이며, 병원 간 자원 주문·배차·추적 및 교통·공공사업 통신은 <strong>지원 통신(Support)</strong>에 속한다.</p>
+<p class="source-location">원문 p.52</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">07</span>SITREP, Status Report, IAP의 시간적·기능적 차이는 무엇인가?</summary><div class="quiz-answer"><p><strong>SITREP</strong>은 지난 작전기간의 확인·검증된 상세 스냅샷(정기)이고, <strong>Status Report(예: Spot Report)</strong>는 정기 보고 외의 시간민감·기능별 보고(수시·비격식)이며, <strong>IAP</strong>는 계획된 작전기간(통상 12~24시간)의 목표·전술 계획이다.</p>
+<p class="source-location">원문 p.54</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">08</span>데이터 수집 및 처리의 6대 표준 요소는 무엇이며, 수집 계획 수립 전에 무엇을 먼저 정의해야 하는가?</summary><div class="quiz-answer"><p>초기 상황판단/신속평가, 데이터 수집 계획, 검증, 분석, 전파, 갱신의 6개 표준 요소다. 고정된 1회성 직선 절차를 뜻하지 않는다. 데이터 수집 계획에 앞서 EEI를 정의한다.</p>
+<p class="source-location">원문 pp.55–56</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">09</span>검증(Validation) 단계에서 걸러내야 하는 데이터의 5가지 문제와, 분석(Analysis) 단계에서 반드시 인지해야 하는 것은?</summary><div class="quiz-answer"><p>데이터가 <strong>불완전(incomplete)·부정확(inaccurate)·과장/윤색(embellished)·구식(outdated)·오도(misleading)</strong>되었는지 검토해야 하며, 분석 시 <strong>결측·미지 데이터(missing or unknown data)</strong>를 인지해야 한다.</p>
+<p class="source-location">원문 p.56</p></div></details>
+<details class="quiz-item"><summary><span class="question-number">10</span>평문(Plain Language), 암호화(Encryption), 전술 언어(Tactical Language)는 어떻게 구별하며 제한·기밀정보 접근 기준은 무엇인가?</summary><div class="quiz-answer"><p>평문은 상대방이 이해할 수 있는 표현을 쓰는 원칙이다. 보안 유지에 필요한 경우 정보를 암호화하는 방법과 시스템을 갖춘다. 전술 언어는 진행 중인 테러 사건 등을 예로 사고 성격상 정당화될 수 있으며, 해당 사용 지침은 사고별 통신계획에 포함한다. 제한·기밀정보 접근은 관련 법률·보안인가·알 필요성(Need to Know)에 따른다.</p>
+<p class="source-location">원문 p.57, p.59</p></div></details><div class="evidence-note"><h3>자료와 검증 범위</h3><p>FEMA, <em>National Incident Management System</em>, Third Edition, October 2017. 제IV장, 인쇄 pp.50–59. 발췌 PDF는 표지 포함 11쪽이며 PDF 2–11쪽이 본문에 대응합니다.</p><p>한국어 정리와 비교표는 학습용입니다. 본문에는 번호가 붙은 그림·표가 없으며 p.58 USNG 설명 상자를 원문 이미지 그대로 수록했습니다. 외부 ICS 양식과 Planning P 도해는 이 페이지에 포함하지 않았습니다.</p><p>원문 직접 판독·독립 재검토 반영: 2026-10-17. 한국 현행 제도와의 대응은 추가 확인 과제입니다.</p><a href="../../chapter4.md">GitHub용 원문 기반 정리 읽기 →</a></div></div><a class="next-chapter" href="#top"><span>학습 마무리</span><strong>처음으로 돌아가기 ↑</strong></a></section></main><footer class="site-footer"><strong>제4장 · 통신 및 정보관리</strong><p>FEMA NIMS 제3판(2017) 원문 기반 한국어 학습 정리 · 2026-10-17</p><a href="../../index.html">전체 교재 목차로 돌아가기 →</a></footer></div></div><dialog id="image-viewer" aria-labelledby="viewer-title"><div class="viewer-toolbar"><strong id="viewer-title">원문 이미지</strong><div class="viewer-controls"><button type="button" id="zoom-out" aria-label="그림 축소">−</button><button type="button" id="zoom-in" aria-label="그림 확대">＋</button><button type="button" id="zoom-fit">화면 맞춤</button><button type="button" id="viewer-close">닫기</button></div></div><div class="viewer-scroll"><img id="viewer-image" alt=""></div><p class="viewer-help">확대한 이미지는 스크롤해서 볼 수 있습니다. Escape 키로 닫을 수 있습니다.</p></dialog></body></html>
