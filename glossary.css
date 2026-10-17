@@ -1,0 +1,45 @@
+.glossary-page .hero h1 { letter-spacing: -.055em; }
+.glossary-page .hero-subject { overflow-wrap: anywhere; }
+.glossary-page .toc-label { margin-bottom: 10px; }
+.alphabet-nav { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin: 14px 0 20px; }
+.alphabet-nav a { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 5px; border: 1px solid var(--line); border-radius: 4px; font: .85rem ui-monospace, monospace; text-decoration: none; }
+.alphabet-nav a[aria-current="location"] { background: var(--ink); color: var(--paper); }
+.glossary-page a[aria-disabled="true"] { opacity: .35; }
+.glossary-intro { padding-bottom: 28px; }
+.glossary-search { margin-top: 28px; }
+.glossary-search label { display: block; font-size: .88rem; font-weight: 700; margin-bottom: 10px; }
+.search-row { display: flex; gap: 8px; }
+.search-row input { width: 100%; min-width: 0; min-height: 48px; padding: 11px 13px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--text); font: inherit; font-size: .88rem; }
+.search-row input:focus-visible { outline: 3px solid #216687; outline-offset: 2px; }
+.search-row button { flex-shrink: 0; min-height: 48px; padding: 8px 15px; border: 1px solid var(--line); border-radius: 4px; background: var(--tint); color: var(--ink); font-size: .8rem; }
+.search-row button:disabled { opacity: .5; cursor: default; }
+.search-status { margin: 12px 0 0; font-size: .76rem; color: var(--muted); }
+.search-hint { display: block; margin: 7px 0 12px; color: var(--muted); font-size: .74rem; }
+.glossary-group { padding-bottom: 5px; }
+.glossary-group .chapter-header { margin-bottom: 0; }
+.glossary-group .chapter-header h2 { font: 400 2.15rem ui-monospace, monospace; margin-bottom: 8px; }
+.glossary-entry { padding: 26px 0 30px; border-bottom: 1px solid var(--line); scroll-margin-top: 100px; }
+.glossary-entry:last-child { border-bottom: 0; }
+.entry-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font: .65rem ui-monospace, monospace; margin-bottom: 16px; }
+.entry-meta a { display: inline-flex; min-height: 44px; align-items: center; font: .72rem -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+.definition-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 26px; }
+.definition-en { color: var(--muted); }
+.definition-pair p, .definition-pair li { font-size: .87rem; line-height: 1.85; margin-bottom: 12px; overflow-wrap: anywhere; }
+.definition-pair p:last-child, .definition-pair ul:last-child { margin-bottom: 0; }
+.definition-pair strong { display: block; color: var(--ink); line-height: 1.6; margin-bottom: 10px; }
+.definition-pair .lang { display: block; font-size: .64rem; letter-spacing: .035em; color: var(--muted); margin-bottom: 8px; }
+.definition-pair .empty { display: none; }
+.glossary-entry:target { outline: 2px solid #216687; outline-offset: 9px; }
+.glossary-intro .definition-pair { padding: 4px 0 10px; }
+.glossary-intro .definition-pair p { font-size: .9rem; }
+.glossary-sources { padding-bottom: 26px; }
+.glossary-sources p { font-size: .87rem; }
+.glossary-sources li { font-size: .86rem; }
+.empty-results { padding: 28px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+.empty-results h2 { font-size: 1.2rem; }
+.empty-results p { font-size: .9rem; margin-bottom: 0; }
+.glossary-page [hidden] { display: none !important; }
+@media (max-width: 1050px) { .definition-pair { grid-template-columns: 1fr; gap: 18px; } .definition-ko { border-left: 2px solid var(--line); padding-left: 16px; } }
+@media (max-width: 800px) { .mobile-toc .alphabet-nav { grid-template-columns: repeat(6, 1fr); margin: 12px 0; } .mobile-toc .alphabet-nav a { padding: 5px; } .glossary-entry { scroll-margin-top: 132px; } .definition-pair p, .definition-pair li { font-size: .96rem; } .entry-meta { font-size: .67rem; } .glossary-page .hero h1 { font-size: 2.6rem; } }
+@media (max-width: 420px) { .glossary-page .hero h1 { font-size: 2.25rem; } .search-row button { padding: 8px 11px; } .glossary-entry { padding: 19px 0 25px; } .definition-pair { gap: 18px; } .definition-ko { padding-left: 13px; } .mobile-toc .alphabet-nav { grid-template-columns: repeat(5, 1fr); } }
+@media print { .glossary-search, .entry-meta a { display: none; } .definition-pair { grid-template-columns: 1fr 1fr; } .definition-ko { border: 0; padding: 0; } .glossary-entry { break-inside: avoid; } }
