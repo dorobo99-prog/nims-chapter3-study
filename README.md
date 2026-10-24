@@ -1,14 +1,15 @@
 # 현장지휘체계 학습 노트
 
-[전체 목차](https://dadem-nims-study.vercel.app/) · [제1장](https://dadem-nims-study.vercel.app/chapters/01/) · [제2장](https://dadem-nims-study.vercel.app/chapters/02/) · [제3장](https://dadem-nims-study.vercel.app/chapters/03/) · [제4장](https://dadem-nims-study.vercel.app/chapters/04/) · [제6장 용어집](https://dadem-nims-study.vercel.app/chapters/06/) · [부록 A](https://dadem-nims-study.vercel.app/appendices/a/) · [부록 B](https://dadem-nims-study.vercel.app/appendices/b/)
+[전체 목차](https://dadem-nims-study.vercel.app/) · [제1장](https://dadem-nims-study.vercel.app/chapters/01/) · [제2장](https://dadem-nims-study.vercel.app/chapters/02/) · [제3장](https://dadem-nims-study.vercel.app/chapters/03/) · [제4장](https://dadem-nims-study.vercel.app/chapters/04/) · [제5장](https://dadem-nims-study.vercel.app/chapters/05/) · [제6장 용어집](https://dadem-nims-study.vercel.app/chapters/06/) · [부록 A](https://dadem-nims-study.vercel.app/appendices/a/) · [부록 B](https://dadem-nims-study.vercel.app/appendices/b/)
 
-제1~8장을 연결할 학습 목차입니다. 현재 제1장 NIMS의 기초와 개념, 제2장 자원관리, 제3장 지휘 및 조정, 제4장 통신 및 정보관리, 제6장 용어집을 제공합니다. 그 밖의 장은 자료 등록 후 제목과 내용을 연결합니다.
+제1~8장을 연결할 학습 목차입니다. 현재 제1장 NIMS의 기초와 개념, 제2장 자원관리, 제3장 지휘 및 조정, 제4장 통신 및 정보관리, 제5장 결론, 제6장 용어집을 제공합니다. 그 밖의 장은 자료 등록 후 제목과 내용을 연결합니다.
 
 ## 학습 자료
 
 - [제3장 원문 기반 정리](chapter3.md) · [용어](terms.md) · [지휘체계 비교](command-comparison.md) · [참모 역할](staff-roles.md) · [복습](study-guide.md) · [연구 연결](q-research.md)
 - [제2장 원문 기반 정리](chapter2.md)
 - [제4장 원문 기반 정리](chapter4.md)
+- [제5장 원문·번역·해설](chapter5.md)
 
 제3·4장 기준은 FEMA NIMS 제3판(2017)의 인쇄 pp.19–49, pp.50–59입니다. 한국어 설명과 비교표는 학습용 정리입니다. 원문 그림과 USNG 설명 상자를 이미지 그대로 사용하며, 제4장에는 번호가 붙은 원문 그림·표가 없습니다.
 
@@ -23,7 +24,7 @@
 정적 HTML·CSS·JavaScript로 동작하며 별도 설치나 빌드가 필요하지 않습니다. Vercel 프로젝트 `dadem-nims-study`가 이 저장소의 main 브랜치를 자동 배포합니다.
 
 - 전체 목차: index.html
-- 장별 페이지: chapters/01/index.html, chapters/02/index.html, chapters/03/index.html, chapters/04/index.html, chapters/06/index.html
+- 장별 페이지: chapters/01/index.html, chapters/02/index.html, chapters/03/index.html, chapters/04/index.html, chapters/05/index.html, chapters/06/index.html
 - 부록 페이지: appendices/a/index.html, appendices/b/index.html
 - 기존 제3장 Markdown·이미지 경로 유지
 - 기존 루트의 제3장 섹션 링크(index.html#ics 등)는 제3장 해당 위치로 연결
@@ -32,6 +33,8 @@
 
 원문 직접 판독과 읽기 전용 재검토를 반영했습니다. EEI 14항목과 수집 방법 8가지는 예시, 6개 데이터 처리 항목은 표준 요소, IAP 작전기간 12~24시간은 통상 범위입니다. 평문은 암호화 금지와 구별합니다. 한국 현행 제도·미제공 외부 양식은 확정하지 않습니다.
 
-v2.4.0 · 2026-10-24 · [변경 이력](CHANGELOG.md)
+v2.5.0 · 2026-10-24 · [변경 이력](CHANGELOG.md)
 
 제2장은 인쇄 pp.6–18의 직접 판독 학습 노트입니다. 원문 그림2개·음영 설명 상자5개를 영문·화살표·색상·캡션을 유지한 이미지로 제공합니다. 별도 번호 표는 없으며 한국어 비교표는 학습 재구성입니다. p.10/p.16의 추적 범위 차이를 명시합니다.
+
+제5장은 인쇄 p.60의 원문3문단12문장을 순서대로 보존하고 번역·학습해설을 함께 제공합니다. 원문 그림·표는 없으며 비교표4개는 학습용입니다. 4년 주기 검토 계획과 실제 이행, 2017년의 향상 평가와 실증 성과를 구별합니다.
