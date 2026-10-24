@@ -53,7 +53,10 @@ function filterEntries() {
     if (unavailable) link.setAttribute('aria-disabled', 'true');
     else link.removeAttribute('aria-disabled');
   });
-  status.textContent = words.length ? `검색 결과: 용어 ${terms}개 · 약어 ${abbreviations}개` : '전체: 용어 142개 · 약어 26개';
+  const totalTerms = entries.filter(entry => entry.id.startsWith('term-')).length;
+  const totalAbbreviations = entries.length - totalTerms;
+  const counts = totalTerms ? `용어 ${words.length ? terms : totalTerms}개 · 약어 ${words.length ? abbreviations : totalAbbreviations}개` : `약어 ${words.length ? abbreviations : totalAbbreviations}개`;
+  status.textContent = `${words.length ? '검색 결과' : '전체'}: ${counts}`;
   empty.hidden = terms + abbreviations > 0;
   clear.disabled = !search.value;
   scheduleReading();
