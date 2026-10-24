@@ -134,3 +134,151 @@
 기준 자료: FEMA, *National Incident Management System*, Third Edition, October 2017, VII. List of Abbreviations, 인쇄 pp.72–73. 제공 PDF는2쪽이다. 판본은 기존 전체 NIMS 교재와 연결하며 PDF 생성일과 원전 발행연도를 구별한다.
 
 사용자 제공 ChatGPT v1.0의52개 대응표·개념군·비교 질문을 참고했다. 영문52쌍은 제공 PDF의 텍스트와 페이지 화면으로 다시 확인했다. 자체 품질점수9.43은 객관적 검증 결과로 사용하지 않는다. 현재 기관 명칭·법령 효력·도구 운영 상태는 이번 확인 범위가 아니다.
+
+## 키워드 보충설명
+
+기존 장의 정의와 설명을 연결한 학습용 보충해설입니다. 뜻풀이 → 구별·적용 → 확인 질문 순서로 읽고, 각 항목의 근거 링크에서 원래 문맥을 확인하세요. 가상 사례와 확인 질문은 수업용 재구성이며 원문 인용이 아닙니다.
+
+
+
+### 1. 체계와 현장 구조(NIMS·ICS)
+
+NIMS는 공동 사고관리를 위한 넓은 체계이고, ICS는 현장 관리 기능과 지휘 관계를 조직하는 핵심 구조다. 약어를 풀어 쓰는 것에서 두 대상의 범위 차이까지 연결한다.
+
+
+
+**구별·적용:** 제7장 자체는 약어와 영문 확장형 목록이다. 기능 설명은 제1·3·6장에서 가져와 함께 읽는 보충해설이다.
+
+
+
+**확인 질문:** ICS 조직도를 완성하면 NIMS의 자원·지원·정보관리까지 모두 설명한 것인가?
+
+
+
+**근거:** [제7장 · abbr-nims](https://dadem-nims-study.vercel.app/chapters/07/#abbr-nims) · [제7장 · abbr-ics](https://dadem-nims-study.vercel.app/chapters/07/#abbr-ics) · [제6장 · term-83](https://dadem-nims-study.vercel.app/chapters/06/#term-83)
+
+
+
+### 2. 구조와 포괄적 체계(MAC Group·MACS)
+
+MAC Group은 다기관조정그룹이고, MACS는 다기관조정체계다. Group은 정책·우선순위 판단에 참여하는 구조를, System은 더 넓은 조정의 틀을 가리킨다.
+
+
+
+**구별·적용:** MAC Group을 MACS의 다른 표기로 바꾸면 조직 하나와 포괄적 체계가 뒤섞인다. 기관 이름을 나열할 때도 두 약어를 구별한다.
+
+
+
+**확인 질문:** 이 문장의 MAC은 특정 그룹을 뜻하는가, 다기관 조정의 전체 체계를 뜻하는가?
+
+
+
+**근거:** [제7장 · abbr-mac-group](https://dadem-nims-study.vercel.app/chapters/07/#abbr-mac-group) · [제7장 · abbr-macs](https://dadem-nims-study.vercel.app/chapters/07/#abbr-macs) · [제3장 · mac](https://dadem-nims-study.vercel.app/chapters/03/#mac)
+
+
+
+### 3. 역할·체계·거점(PIO·JIS·JIC)
+
+PIO는 공보 역할, JIS는 정보 활동을 조정하는 체계, JIC는 공동정보 활동의 물리적·가상 거점이다. 약어의 마지막 단어 Officer·System·Center가 구별을 돕는다.
+
+
+
+**구별·적용:** 같은 공공정보 분야에 속하더라도 서로 대체할 수 있는 이름이 아니다. 인력 지정, 조정 절차 마련, 거점 설치를 각각 확인한다.
+
+
+
+**확인 질문:** 담당관을 정하는 일과 공동 메시지 조정 절차를 만드는 일 중 무엇이 빠져 있는가?
+
+
+
+**근거:** [제7장 · abbr-pio](https://dadem-nims-study.vercel.app/chapters/07/#abbr-pio) · [제7장 · abbr-jis](https://dadem-nims-study.vercel.app/chapters/07/#abbr-jis) · [제7장 · abbr-jic](https://dadem-nims-study.vercel.app/chapters/07/#abbr-jic) · [제3장 · jis](https://dadem-nims-study.vercel.app/chapters/03/#jis)
+
+
+
+### 4. 자격과 지원 팀(IMT·IMAT)
+
+IMT와 IMAT는 각각 Incident Management Team과 Incident Management Assistance Team이다. 팀의 이름을 확인한 뒤 제3장에서 구성·임무·권한의 설명을 함께 읽는다.
+
+
+
+**구별·적용:** IMAT라는 이름의 Assistance만 보고 어떤 경우에도 지휘 권한이 없다고 단정하지 않는다. 실제로 부여된 권한과 임무를 확인해야 한다.
+
+
+
+**확인 질문:** 이 팀은 무엇을 지원하며 이 사고에서 어떤 권한을 위임받았는가?
+
+
+
+**근거:** [제7장 · abbr-imt](https://dadem-nims-study.vercel.app/chapters/07/#abbr-imt) · [제7장 · abbr-imat](https://dadem-nims-study.vercel.app/chapters/07/#abbr-imat) · [제3장 · ics](https://dadem-nims-study.vercel.app/chapters/03/#ics)
+
+
+
+### 5. 계획 지침·평가·계획·절차(CPG·THIRA·IAP·SOP)
+
+CPG는 대비 지침, THIRA는 위협·위해요인 식별 및 위험평가, IAP는 사고의 작전기간 계획, SOP는 표준운영절차를 가리킨다. 문서의 약어만이 아니라 쓰는 목적을 구별한다.
+
+
+
+**구별·적용:** CPG 번호에 따라 다루는 문제가 달라진다. 평소의 계획 지침과 특정 사고의 IAP, 반복 업무를 위한 SOP를 한 종류의 계획서로 묶지 않는다.
+
+
+
+**확인 질문:** 이 자료는 계획을 만드는 안내인가, 위험을 평가하는 과정인가, 이번 임무의 계획인가?
+
+
+
+**근거:** [제7장 · abbr-cpg](https://dadem-nims-study.vercel.app/chapters/07/#abbr-cpg) · [제7장 · abbr-thira](https://dadem-nims-study.vercel.app/chapters/07/#abbr-thira) · [제7장 · abbr-iap](https://dadem-nims-study.vercel.app/chapters/07/#abbr-iap) · [제7장 · abbr-sop](https://dadem-nims-study.vercel.app/chapters/07/#abbr-sop) · [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections)
+
+
+
+### 6. 정의 목록·실제 자원·수행 확인(RTLT·IRIS·PTB)
+
+RTLT는 자원 유형·직위 자격 정의, IRIS는 실제 자원의 목록·검색, PTB는 직위 수행 과업 확인과 연결된다. 기준·보유 현황·개인의 수행 확인이라는 질문이 다르다.
+
+
+
+**구별·적용:** 기준 목록에 자원 유형이 있다고 해서 우리 기관이 그 자원을 보유한 것은 아니다. 개인의 과업 확인 기록 역시 조직의 전체 자원목록을 대신하지 않는다.
+
+
+
+**확인 질문:** 필요한 정보는 자원의 기준인가, 실제 보유·가용 현황인가, 개인의 과업 수행인가?
+
+
+
+**근거:** [제7장 · abbr-rtlt](https://dadem-nims-study.vercel.app/chapters/07/#abbr-rtlt) · [제7장 · abbr-iris](https://dadem-nims-study.vercel.app/chapters/07/#abbr-iris) · [제7장 · abbr-ptb](https://dadem-nims-study.vercel.app/chapters/07/#abbr-ptb) · [제2장 · part-3](https://dadem-nims-study.vercel.app/chapters/02/#part-3) · [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections)
+
+
+
+### 7. 이름을 읽는 법(AHJ·HHS·Pub. L.)
+
+AHJ는 Authority Having Jurisdiction, HHS는 원문 표기상 Health and Human Services, Pub. L.은 Public Law다. 영문 확장형의 실제 표기를 먼저 보존한다.
+
+
+
+**구별·적용:** 기관명을 익숙한 형태로 임의 증보하거나 Public Law를 한국의 일반적 ‘공법’ 개념과 바로 같게 두지 않는다. 기능·법적 효력의 설명은 별도 근거가 필요하다.
+
+
+
+**확인 질문:** 약어의 공식 확장형에 없는 단어를 번역 과정에서 덧붙이지 않았는가?
+
+
+
+**근거:** [제7장 · comparisons](https://dadem-nims-study.vercel.app/chapters/07/#comparisons)
+
+
+
+### 8. 역사적 명칭(NIIMS·NIMS)
+
+NIIMS는 National Interagency Incident Management System, NIMS는 National Incident Management System이다. 제공 제1장은 기존 ICS·다기관 조정의 성과를 계승하는 발전 맥락을 설명한다.
+
+
+
+**구별·적용:** 약어에서 I 하나가 빠졌다는 사실만으로 제도 변화의 원인·범위·성과를 모두 설명하지 않는다. NIIMS에도 모든 사고·위험으로 확대하려는 목적이 있었다는 제공 설명을 함께 보존한다.
+
+
+
+**확인 질문:** 이름의 변화 외에 문서가 설명한 계승과 변화는 무엇인가?
+
+
+
+**근거:** [제7장 · abbr-niims](https://dadem-nims-study.vercel.app/chapters/07/#abbr-niims) · [제7장 · abbr-nims](https://dadem-nims-study.vercel.app/chapters/07/#abbr-nims) · [제1장 · d](https://dadem-nims-study.vercel.app/chapters/01/#d)

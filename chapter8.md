@@ -311,3 +311,151 @@ CPG101의 Version2.0(2010년11월), CPG201 제2판(2013년8월), 소셜미디어
 기준 자료: FEMA, *National Incident Management System*, Third Edition, October2017, VIII.Resources, 인쇄 pp.74–78. 제공 PDF는5쪽이며 PDF쪽=인쇄쪽−73이다. 원문 영문은 줄바꿈·공백을 정규화했으며 줄 경계에서 이어지는 하이픈을 연결했다.
 
 URL은 PDF의 표시문자와 링크 주석을 대조했다. NIEM은 표시문자에 `https://www.niem.gov`, 링크 주석에 끝 slash가 있는 형태가 기록되어 있다. 이 페이지에서는 표시문자를 보존한다. Stafford와 소셜미디어 URL의 줄 경계 하이픈도 원문 링크 주석과 대조했다. 링크를 최신 주소로 임의 대체하거나 링크 대상 문서를 이번에 새로 분석한 것으로 표시하지 않는다.
+
+## 키워드 보충설명
+
+기존 장의 정의와 설명을 연결한 학습용 보충해설입니다. 뜻풀이 → 구별·적용 → 확인 질문 순서로 읽고, 각 항목의 근거 링크에서 원래 문맥을 확인하세요. 가상 사례와 확인 질문은 수업용 재구성이며 원문 인용이 아닙니다.
+
+
+
+### 1. 지침·서식·교육훈련(Guidance·Forms·Training)
+
+제8장의 지원자료는 NIMS 시행을 돕는 서로 다른 수단이다. 지침은 적용을 안내하고, 서식은 기록과 정보 정리를 돕고, 교육훈련 자료는 이해와 수행의 기반을 지원하는 것으로 읽는다.
+
+
+
+**구별·적용:** 양식을 채웠다는 사실만으로 목표·전술·지원이 적절하게 연결된 것은 아니다. ICS Forms Booklet과 특정 사고의 IAP를 같은 대상으로 취급하지 않는다.
+
+
+
+**확인 질문:** 지금 필요한 것은 판단의 안내인가, 기록 도구인가, 수행을 익히는 과정인가?
+
+
+
+**근거:** [제8장 · supporting](https://dadem-nims-study.vercel.app/chapters/08/#supporting) · [제8장 · additional](https://dadem-nims-study.vercel.app/chapters/08/#additional)
+
+
+
+### 2. 비상운영계획 지침(CPG 101)
+
+원전은 비상운영계획(EOP)을 개발·유지하는 지침으로 CPG 101을 소개한다. 수록 판본은 2010년 11월의 Version 2.0이다.
+
+
+
+**구별·적용:** 특정 사고의 작전기간을 다루는 IAP와 평소의 비상운영계획 수립·유지를 안내하는 자료를 구별한다. 여기서는 링크 대상 전체를 새로 분석한 것으로 표시하지 않는다.
+
+
+
+**확인 질문:** 우리에게 필요한 것은 평소 계획의 개발·유지인가, 지금 사고의 다음 작전기간 계획인가?
+
+
+
+**근거:** [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections) · [제3장 · principles](https://dadem-nims-study.vercel.app/chapters/03/#principles)
+
+
+
+### 3. 위협·위해요인 식별 및 위험평가(THIRA·CPG 201)
+
+원전은 CPG 201을 위협·위해요인과 필요한 역량 목표, 자원 소요를 검토하는 자료로 소개한다. 수록 판본은 2013년 8월의 제2판이다.
+
+
+
+**구별·적용:** CPG 101과 같은 번호 계열이라고 같은 질문을 다루는 것은 아니다. 어떤 위험에 대비할지와 필요한 역량을 살피는 질문을 계획 작성·유지 질문과 연결해 읽는다.
+
+
+
+**확인 질문:** 위험의 파악이 어떤 역량 목표와 자원 소요로 이어지는가?
+
+
+
+**근거:** [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections)
+
+
+
+### 4. 국가대비목표·체계·프레임워크(Goal·System·Frameworks)
+
+Goal은 지향할 대비 상태와 역량, System은 이를 달성하는 조직화된 과정, Frameworks는 다섯 임무영역에서 공동체가 함께 활동하는 방식을 소개한다.
+
+
+
+**구별·적용:** 각 자료가 답하는 질문을 기준으로 다음 읽을 대상을 고른다. 제8장의 짧은 소개에 열거되지 않은 세부 활동이나 법적 위계를 보충해서 원문 설명으로 만들지 않는다.
+
+
+
+**확인 질문:** 어떤 역량이 필요한가, 어떻게 추진하는가, 누가 함께 일하는가 중 어느 질문을 풀 것인가?
+
+
+
+**근거:** [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections) · [제6장 · term-86](https://dadem-nims-study.vercel.app/chapters/06/#term-86) · [제6장 · term-87](https://dadem-nims-study.vercel.app/chapters/06/#term-87) · [제6장 · term-84](https://dadem-nims-study.vercel.app/chapters/06/#term-84)
+
+
+
+### 5. 자원 유형 정의와 목록 도구(RTLT·IRIS)
+
+RTLT는 공통 자원 유형과 직위 자격의 정의를 찾는 도구로, IRIS는 기관의 실제 자원을 목록화하고 검색하는 도구로 소개된다. 자원 기준과 보유 현황을 연결하는 관계다.
+
+
+
+**구별·적용:** 기준을 안다고 실제 자원의 수량·위치·상태까지 알 수는 없다. 제2장의 자원목록·추적 설명과 함께 읽으면 두 도구가 필요한 이유가 구체화된다.
+
+
+
+**확인 질문:** 자원 요청 전에 기준과 실제 가용 현황을 각각 어디에서 확인해야 하는가?
+
+
+
+**근거:** [제8장 · connections](https://dadem-nims-study.vercel.app/chapters/08/#connections) · [제2장 · part-5](https://dadem-nims-study.vercel.app/chapters/02/#part-5)
+
+
+
+### 6. 기관 간 표준과 채택(NWCG)
+
+원전은 NWCG의 기관 간 표준을 소개하면서 개별 회원기관이 채택을 독립적으로 결정한다는 조건도 제시한다. 공동 기준을 만드는 일과 기관별 채택은 구별된다.
+
+
+
+**구별·적용:** 여러 기관이 표준 개발에 참여한다는 사실을 모든 표준의 자동·동일 적용으로 바꾸지 않는다. 실제 적용 범위를 논할 때는 채택과 권한을 추가로 확인해야 한다.
+
+
+
+**확인 질문:** 이 표준은 어떤 기관이 어떤 범위에서 채택한 것인가?
+
+
+
+**근거:** [제8장 · additional](https://dadem-nims-study.vercel.app/chapters/08/#additional)
+
+
+
+### 7. 상호지원 제도(EMAC)
+
+원전은 주지사가 비상사태나 재난을 선포한 상황에서 주 간 인력·장비·서비스를 공유하는 체제로 EMAC을 소개한다. 제2장의 일반적인 상호지원과 연결해 읽을 수 있다.
+
+
+
+**구별·적용:** 모든 상호지원협정을 EMAC과 동일하게 취급하지 않는다. 일반 개념과 특정 제도의 대상·발동 조건을 구별한다.
+
+
+
+**확인 질문:** 지금 논의하는 지원은 일반 협정인가, 원전이 설명한 EMAC의 조건에 해당하는가?
+
+
+
+**근거:** [제8장 · additional](https://dadem-nims-study.vercel.app/chapters/08/#additional) · [제2장 · part-11](https://dadem-nims-study.vercel.app/chapters/02/#part-11)
+
+
+
+### 8. 참고자료의 종류·판본·권한(Source Type·Edition·Authority)
+
+지원문서·관련 법률·추가자료는 종류와 기능이 다르다. 제목·발행 시점·소개 내용을 확인하면 어떤 질문을 풀 자료인지 판단하기 쉬워진다.
+
+
+
+**구별·적용:** 제8장에 법률이 소개되었다는 사실만으로 현행 효력이나 구체적 의무를 검증한 것은 아니다. 24개 항목과 URL의 수, 원전 수록 판본과 현재 최신판도 각각 구별한다.
+
+
+
+**확인 질문:** 이 자료로 확정할 수 있는 범위는 원전의 소개인가, 대상 원문을 읽고 검증한 내용인가?
+
+
+
+**근거:** [제8장 · overview](https://dadem-nims-study.vercel.app/chapters/08/#overview) · [제8장 · law](https://dadem-nims-study.vercel.app/chapters/08/#law)
